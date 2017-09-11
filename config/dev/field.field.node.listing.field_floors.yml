@@ -1,0 +1,23 @@
+uuid: 9a602c55-66f7-473d-b66d-e9d959472b66
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_floors
+    - node.type.listing
+id: node.listing.field_floors
+field_name: field_floors
+entity_type: node
+bundle: listing
+label: Floors
+description: 'Number of floors in living area.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

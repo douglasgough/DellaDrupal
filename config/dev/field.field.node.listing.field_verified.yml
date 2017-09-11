@@ -1,0 +1,23 @@
+uuid: df6731f9-a2ad-4f26-901e-bc1e586ca56a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_verified
+    - node.type.listing
+id: node.listing.field_verified
+field_name: field_verified
+entity_type: node
+bundle: listing
+label: Verified
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

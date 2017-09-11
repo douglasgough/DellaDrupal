@@ -1,0 +1,22 @@
+uuid: 4684f7de-f378-422e-885c-b5859b6e61af
+langcode: en
+status: true
+dependencies:
+  theme:
+    - foundation
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: foundation_local_tasks
+theme: foundation
+region: content
+weight: -14
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

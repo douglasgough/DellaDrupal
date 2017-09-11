@@ -1,0 +1,20 @@
+uuid: 627538df-3fd1-4b77-8cb8-5b5c4010c6d9
+langcode: en
+status: true
+dependencies:
+  theme:
+    - foundation
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: foundation_page_title
+theme: foundation
+region: content_top
+weight: -12
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,9 @@
+uuid: 292d3ea3-057b-4f2f-ab1c-b29d87833638
+langcode: en
+status: true
+dependencies: {  }
+name: 'Property Type'
+vid: property_type
+description: 'The type of property for listings'
+hierarchy: 0
+weight: 0

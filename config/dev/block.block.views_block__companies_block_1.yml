@@ -1,0 +1,24 @@
+uuid: be20e580-4425-49ac-8a15-938d5850b019
+langcode: en
+status: false
+dependencies:
+  config:
+    - views.view.companies
+  module:
+    - views
+  theme:
+    - foundation
+id: views_block__companies_block_1
+theme: foundation
+region: bottom
+weight: -13
+provider: null
+plugin: 'views_block:companies-block_1'
+settings:
+  id: 'views_block:companies-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

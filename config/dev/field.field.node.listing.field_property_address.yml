@@ -1,0 +1,36 @@
+uuid: 68a556a1-5226-4612-b85d-a01593e95893
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_property_address
+    - node.type.listing
+  module:
+    - address
+id: node.listing.field_property_address
+field_name: field_property_address
+entity_type: node
+bundle: listing
+label: 'Property Address'
+description: 'The address of the listed property'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  available_countries:
+    CA: CA
+  fields:
+    administrativeArea: administrativeArea
+    locality: locality
+    dependentLocality: dependentLocality
+    postalCode: postalCode
+    addressLine1: addressLine1
+    addressLine2: addressLine2
+    sortingCode: '0'
+    organization: '0'
+    givenName: '0'
+    additionalName: '0'
+    familyName: '0'
+  langcode_override: ''
+field_type: address

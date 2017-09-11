@@ -1,0 +1,21 @@
+uuid: 29fe18cb-a0fe-4e1f-8991-8361eb553626
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_lot_dimensions
+field_name: field_lot_dimensions
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

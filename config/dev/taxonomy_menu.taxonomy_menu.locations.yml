@@ -1,0 +1,14 @@
+uuid: 1a8fb20b-a694-4b98-b2dc-9b7626e4b316
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.locations
+    - taxonomy.vocabulary.locations
+id: locations
+label: Locations
+vocabulary: locations
+menu: locations
+expanded: false
+depth: 0
+menu_parent: 'admin:'

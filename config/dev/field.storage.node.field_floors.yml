@@ -1,0 +1,20 @@
+uuid: 53f6a49d-8e98-4374-bde2-7d0cc57eb15f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_floors
+field_name: field_floors
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
