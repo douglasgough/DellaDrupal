@@ -1,0 +1,24 @@
+# Ignore core and vendor when managing dependencies with Composer.
+drush
+.c9
+scripts
+vendor
+
+web/core
+web/vendor
+web/modules
+
+# Ignore configuration files that may contain sensitive information.
+web/sites/*/settings*.php
+web/sites/*/services*.yml
+
+# Ignore paths that contain user-generated content.
+web/sites/*/files
+web/sites/*/private
+
+# Ignore SimpleTest multi-site environment.
+web/sites/simpletest
+
+# Ignore themes. Commit them to thier own repo
+web/themes/contrib
+web/themes/custom
