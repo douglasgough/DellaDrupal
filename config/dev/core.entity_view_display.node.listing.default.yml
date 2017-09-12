@@ -82,13 +82,13 @@ content:
   body:
     label: above
     type: text_trimmed
-    weight: 15
+    weight: 16
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: middle
   field_bathrooms:
-    weight: 13
+    weight: 14
     label: inline
     settings:
       thousand_separator: ''
@@ -97,7 +97,7 @@ content:
     type: number_integer
     region: above_right
   field_bedrooms:
-    weight: 12
+    weight: 13
     label: inline
     settings:
       thousand_separator: ''
@@ -106,14 +106,14 @@ content:
     type: number_integer
     region: above_right
   field_feature_sheet:
-    weight: 16
+    weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
     region: below_left
   field_floors:
-    weight: 11
+    weight: 12
     label: inline
     settings:
       thousand_separator: ''
@@ -131,7 +131,7 @@ content:
     type: image
     region: hero
   field_half_baths:
-    weight: 14
+    weight: 15
     label: inline
     settings:
       thousand_separator: ''
@@ -140,7 +140,7 @@ content:
     type: number_integer
     region: above_right
   field_interior_area:
-    weight: 8
+    weight: 9
     label: inline
     settings:
       thousand_separator: ''
@@ -152,14 +152,14 @@ content:
     region: above_center
   field_location:
     type: entity_reference_label
-    weight: 3
+    weight: 4
     region: above_left
     label: inline
     settings:
       link: false
     third_party_settings: {  }
   field_lot_area:
-    weight: 6
+    weight: 7
     label: inline
     settings:
       thousand_separator: ''
@@ -170,7 +170,7 @@ content:
     type: number_decimal
     region: above_center
   field_lot_dimensions:
-    weight: 7
+    weight: 8
     label: inline
     settings:
       link_to_entity: false
@@ -178,7 +178,7 @@ content:
     type: string
     region: above_center
   field_mls_number:
-    weight: 17
+    weight: 18
     label: above
     settings:
       link_to_entity: false
@@ -186,14 +186,14 @@ content:
     type: string
     region: below_right
   field_opening_hours:
-    weight: 2
+    weight: 3
     label: above
     settings: {  }
     third_party_settings: {  }
     type: basic_string
     region: top
   field_parking:
-    weight: 9
+    weight: 10
     label: inline
     settings:
       link_to_entity: false
@@ -202,7 +202,7 @@ content:
     region: above_center
   field_price:
     type: number_decimal
-    weight: 1
+    weight: 2
     region: top
     label: visually_hidden
     settings:
@@ -212,7 +212,7 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
   field_property:
-    weight: 4
+    weight: 5
     label: inline
     settings:
       link: false
@@ -220,24 +220,24 @@ content:
     type: entity_reference_label
     region: above_left
   field_property_address:
-    weight: 5
+    weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: address_plain
     region: above_left
   field_property_status:
-    weight: 18
-    label: visually_hidden
+    type: entity_reference_label
+    weight: 1
+    region: hero
+    label: hidden
     settings:
       link: false
     third_party_settings:
       ds:
         ds_limit: ''
-    type: entity_reference_label
-    region: hero
   field_year_built:
-    weight: 10
+    weight: 11
     label: inline
     settings:
       link_to_entity: false

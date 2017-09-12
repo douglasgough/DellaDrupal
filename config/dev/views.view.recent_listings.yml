@@ -8,6 +8,7 @@ dependencies:
     - field.storage.node.field_location
     - field.storage.node.field_price
     - field.storage.node.field_property
+    - field.storage.node.field_property_status
     - field.storage.node.field_verified
     - image.style.listing_thumbnail
     - node.type.listing
@@ -62,7 +63,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 8
+          items_per_page: 9
           offset: 0
       style:
         type: default
@@ -417,6 +418,69 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_property_status:
+          id: field_property_status
+          table: node__field_property_status
+          field: field_property_status
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         field_price:
           id: field_price
           table: node__field_price
@@ -468,10 +532,10 @@ display:
           click_sort_column: value
           type: number_decimal
           settings:
-            thousand_separator: ' '
+            thousand_separator: ','
             prefix_suffix: true
             decimal_separator: .
-            scale: 2
+            scale: 0
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -487,6 +551,69 @@ display:
           id: field_location
           table: node__field_location
           field: field_location
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        field_property:
+          id: field_property
+          table: node__field_property
+          field: field_property
           relationship: none
           group_type: group
           admin_label: ''
@@ -617,7 +744,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -674,73 +801,10 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
-        field_property:
-          id: field_property
-          table: node__field_property
-          field: field_property
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_label
-          settings:
-            link: false
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
       defaults:
         fields: false
         title: false
-      title: 'Most Recent Listings<strong>Take a look at the most awesome events and interesting city spots available in our directory catalogue.</strong>'
+      title: 'Recent Listings'
     cache_metadata:
       max-age: -1
       contexts:
@@ -753,6 +817,7 @@ display:
         - 'config:field.storage.node.field_location'
         - 'config:field.storage.node.field_price'
         - 'config:field.storage.node.field_property'
+        - 'config:field.storage.node.field_property_status'
         - 'config:field.storage.node.field_verified'
   page_1:
     display_plugin: page
