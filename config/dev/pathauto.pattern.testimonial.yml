@@ -1,0 +1,22 @@
+uuid: d2b1794d-e23c-4d69-9da5-dd80db0a7732
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: testimonial
+label: Testimonial
+type: 'canonical_entities:node'
+pattern: '/testimonials/[node:title]'
+selection_criteria:
+  faf6eab8-4cb8-413c-9dfd-eeb1b5b852aa:
+    id: node_type
+    bundles:
+      testimonial: testimonial
+    negate: false
+    context_mapping:
+      node: node
+    uuid: faf6eab8-4cb8-413c-9dfd-eeb1b5b852aa
+selection_logic: and
+weight: -5
+relationships: {  }
