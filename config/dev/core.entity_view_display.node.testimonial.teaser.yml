@@ -5,10 +5,30 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_client_location
+    - field.field.node.testimonial.field_client_name
+    - field.field.node.testimonial.field_short_quote
     - node.type.testimonial
   module:
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_testimonial
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - field_short_quote
+      left:
+        - field_client_name
+        - field_client_location
+      right:
+        - body
 id: node.testimonial.teaser
 targetEntityType: node
 bundle: testimonial
@@ -17,12 +37,61 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 3
     settings:
-      trim_length: 600
+      trim_length: 400
     third_party_settings: {  }
-    region: content
-  links:
-    weight: 100
-    region: content
-hidden: {  }
+    region: right
+  field_client_location:
+    type: entity_reference_label
+    weight: 2
+    region: left
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_client_name:
+    type: string
+    weight: 1
+    region: left
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_short_quote:
+    type: basic_string
+    weight: 0
+    region: top
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: h2
+            ow-cl: title
+            ow-at: ''
+            ow-def-at: true
+            ow-def-cl: true
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+hidden:
+  links: true

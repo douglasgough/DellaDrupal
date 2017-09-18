@@ -6,12 +6,28 @@ dependencies:
     - field.field.node.testimonial.body
     - field.field.node.testimonial.field_client_location
     - field.field.node.testimonial.field_client_name
-    - field.field.node.testimonial.field_image
+    - field.field.node.testimonial.field_short_quote
     - node.type.testimonial
   module:
-    - image
+    - ds
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_testimonial
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_client_name
+        - field_client_location
+      right:
+        - body
+      top:
+        - field_short_quote
 id: node.testimonial.default
 targetEntityType: node
 bundle: testimonial
@@ -20,38 +36,32 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: right
   field_client_location:
-    weight: 4
-    label: above
+    weight: 2
+    label: hidden
     settings:
-      link: true
+      link: false
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
+    region: left
   field_client_name:
-    weight: 3
-    label: above
+    weight: 1
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
-  field_image:
-    weight: 1
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
-    region: content
-  links:
-    weight: 0
-    region: content
+    region: left
+  field_short_quote:
+    weight: 4
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+    type: basic_string
+    region: top
+hidden:
+  links: true

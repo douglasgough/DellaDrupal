@@ -7,7 +7,6 @@ dependencies:
     - node.type.listing
     - taxonomy.vocabulary.status
   content:
-    - 'taxonomy_term:status:d07f7c69-ae47-463f-b8ad-d518d6f64b22'
     - 'taxonomy_term:status:fc51c195-2e5e-403e-aa37-c6a35f931d61'
 id: node.listing.field_property_status
 field_name: field_property_status
@@ -20,8 +19,6 @@ translatable: false
 default_value:
   -
     target_uuid: fc51c195-2e5e-403e-aa37-c6a35f931d61
-  -
-    target_uuid: d07f7c69-ae47-463f-b8ad-d518d6f64b22
 default_value_callback: ''
 settings:
   handler: 'default:taxonomy_term'
