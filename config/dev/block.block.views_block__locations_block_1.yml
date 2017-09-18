@@ -1,6 +1,6 @@
 uuid: f9c6d15d-9f74-490d-955c-0a42f9de19c4
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - views.view.locations
@@ -11,7 +11,7 @@ dependencies:
 id: views_block__locations_block_1
 theme: foundation
 region: sidebar_first
-weight: -10
+weight: -9
 provider: null
 plugin: 'views_block:locations-block_1'
 settings:

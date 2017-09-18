@@ -9,7 +9,7 @@ dependencies:
 id: searchform
 theme: foundation
 region: sidebar_first
-weight: -13
+weight: -12
 provider: null
 plugin: search_form_block
 settings:

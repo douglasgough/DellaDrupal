@@ -5,7 +5,7 @@ dependencies:
   config:
     - views.view.categories
   module:
-    - ctools
+    - system
     - views
   theme:
     - foundation
@@ -23,10 +23,8 @@ settings:
   views_label: Categories
   items_per_page: none
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
-    bundles:
-      listing: listing
-    negate: true
-    context_mapping:
-      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: "/blog\r\n/blog/*"
+    negate: false
+    context_mapping: {  }

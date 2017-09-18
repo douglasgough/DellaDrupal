@@ -1,0 +1,28 @@
+uuid: c012e651-b39e-4ca7-8953-f912cce31fed
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+    - webform
+  theme:
+    - foundation
+id: webform_2
+theme: foundation
+region: sidebar_first
+weight: -14
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: 'How can I help?'
+  provider: webform
+  label_display: visible
+  webform_id: how_can_i_help_
+  default_data: ''
+visibility:
+  request_path:
+    id: request_path
+    pages: "/listings\r\n/testimonials"
+    negate: false
+    context_mapping: {  }

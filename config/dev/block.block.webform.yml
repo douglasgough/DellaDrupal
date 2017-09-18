@@ -15,7 +15,7 @@ provider: null
 plugin: webform_block
 settings:
   id: webform_block
-  label: 'Listing Inquiry'
+  label: 'Learn more about this listing'
   provider: webform
   label_display: visible
   webform_id: request_information
