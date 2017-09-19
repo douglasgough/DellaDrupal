@@ -1,0 +1,14 @@
+uuid: c2c12932-d1cb-44d8-b642-4eb99aac77a6
+langcode: en
+status: true
+dependencies: {  }
+name: large_wide
+label: 'Large Wide'
+effects:
+  8dd10f82-e29b-4432-8cea-334bc14b9e94:
+    uuid: 8dd10f82-e29b-4432-8cea-334bc14b9e94
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 800
+      height: 550
