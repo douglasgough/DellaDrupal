@@ -39,7 +39,7 @@ content:
     weight: 3
     settings: {  }
     third_party_settings: {  }
-    region: right
+    region: content
   field_client_location:
     weight: 2
     label: hidden
@@ -47,7 +47,7 @@ content:
       link: false
     third_party_settings: {  }
     type: entity_reference_label
-    region: left
+    region: content
   field_client_name:
     weight: 1
     label: hidden
@@ -55,13 +55,13 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: left
+    region: content
   field_short_quote:
     weight: 4
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: basic_string
-    region: top
+    region: content
 hidden:
   links: true

@@ -1,0 +1,21 @@
+uuid: 8b0cdc17-b9a4-40d9-a6f9-37bf13f289c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_open_house_date
+    - node.type.listing
+  module:
+    - datetime_range
+id: node.listing.field_open_house_date
+field_name: field_open_house_date
+entity_type: node
+bundle: listing
+label: 'Open house'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange
