@@ -32,6 +32,7 @@
         "drupal/geolocation": "^1.10",
         "drupal/google_analytics": "^2.1",
         "drupal/imce": "^1.6",
+        "drupal/libraries": "3.x-dev",
         "drupal/mailsystem": "^4.1",
         "drupal/metatag": "^1.2",
         "drupal/page_manager": "^4.0@beta",
