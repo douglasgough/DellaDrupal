@@ -11,7 +11,7 @@ _core:
 id: foundation_help
 theme: foundation
 region: content_top
-weight: -14
+weight: -15
 provider: null
 plugin: help_block
 settings:

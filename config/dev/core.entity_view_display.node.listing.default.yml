@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.listing.field_amenities
     - field.field.node.listing.field_bathrooms
     - field.field.node.listing.field_bedrooms
+    - field.field.node.listing.field_display_open_house
     - field.field.node.listing.field_email
     - field.field.node.listing.field_feature_sheet
     - field.field.node.listing.field_floors
@@ -34,7 +35,7 @@ dependencies:
     - node.type.listing
   module:
     - address
-    - datetime_range
+    - daterange_compact
     - ds
     - file
     - image
@@ -60,8 +61,8 @@ third_party_settings:
         - field_property
         - field_property_address
       above_center:
-        - field_lot_area
         - field_lot_dimensions
+        - field_lot_area
         - field_interior_area
         - field_parking
       above_right:
@@ -83,12 +84,11 @@ mode: default
 content:
   body:
     label: above
-    type: text_trimmed
+    type: text_default
     weight: 16
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings: {  }
-    region: content
+    region: middle
   field_bathrooms:
     weight: 14
     label: inline
@@ -97,7 +97,7 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
-    region: content
+    region: above_right
   field_bedrooms:
     weight: 13
     label: inline
@@ -106,14 +106,14 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
-    region: content
+    region: above_right
   field_feature_sheet:
     weight: 17
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
-    region: content
+    region: below_left
   field_floors:
     weight: 12
     label: inline
@@ -122,7 +122,7 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
-    region: content
+    region: above_right
   field_gallery:
     weight: 0
     label: hidden
@@ -131,7 +131,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
+    region: hero
   field_half_baths:
     weight: 15
     label: inline
@@ -140,7 +140,7 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
-    region: content
+    region: above_right
   field_interior_area:
     weight: 9
     label: inline
@@ -151,17 +151,24 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
-    region: content
+    region: above_center
   field_location:
     type: entity_reference_label
     weight: 4
-    region: content
+    region: above_left
     label: inline
     settings:
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
   field_lot_area:
-    weight: 7
+    weight: 8
     label: inline
     settings:
       thousand_separator: ''
@@ -170,15 +177,15 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
-    region: content
+    region: above_center
   field_lot_dimensions:
-    weight: 8
+    weight: 7
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: above_center
   field_mls_number:
     weight: 18
     label: above
@@ -186,14 +193,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: below_right
   field_open_house_date:
     weight: 3
     label: above
     settings:
-      timezone_override: America/Vancouver
-      date_format: 'D M d g:i A'
-      separator: '-'
+      format_type: medium
     third_party_settings:
       ds:
         ds_limit: ''
@@ -211,8 +216,9 @@ content:
             fis-el: ''
             fis-cl: ''
             fis-at: ''
-            fi-el: ''
-            fi-cl: ''
+            fi: true
+            fi-el: i
+            fi-cl: 'fa fa-calendar'
             fi-at: ''
             suffix: ''
             lbw: false
@@ -222,10 +228,9 @@ content:
             ow-def-cl: false
             fis: false
             fis-def-at: false
-            fi: false
             fi-def-at: false
-    type: daterange_custom
-    region: content
+    type: daterange_compact
+    region: top
   field_parking:
     weight: 10
     label: inline
@@ -233,12 +238,12 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: above_center
   field_price:
     type: number_decimal
     weight: 2
-    region: content
-    label: visually_hidden
+    region: top
+    label: hidden
     settings:
       thousand_separator: ','
       decimal_separator: .
@@ -250,20 +255,27 @@ content:
     label: inline
     settings:
       link: false
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: entity_reference_label
-    region: content
+    region: above_left
   field_property_address:
     weight: 6
     label: above
     settings: {  }
     third_party_settings: {  }
     type: address_plain
-    region: content
+    region: above_left
   field_property_status:
     type: entity_reference_label
     weight: 1
-    region: content
+    region: hero
     label: hidden
     settings:
       link: false
@@ -277,10 +289,11 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: above_right
 hidden:
   comment: true
   field_amenities: true
+  field_display_open_house: true
   field_email: true
   field_geolocation: true
   field_image: true

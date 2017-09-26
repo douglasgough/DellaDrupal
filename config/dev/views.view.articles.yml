@@ -392,7 +392,7 @@ display:
       defaults:
         pager: false
         title: false
-      title: 'Top News You Shouldn''t Miss<strong>Here you can display most recent blog articles and inform about interesting events.</strong>'
+      title: 'News and Resources<strong>Helpful resources and information for buyers and sellers</strong>'
     cache_metadata:
       max-age: -1
       contexts:

@@ -12,12 +12,12 @@ favicon:
 facebook: 'https://facebook.com'
 twitter: 'https://twitter.com'
 pinterest: 'https://pinterest.com'
-social_facebook: 'https://facebook.com/dellahonestly'
-social_twitter: 'https://twitter.com/dellahonestly'
-social_pinterest: 'https://pinterest.com/dellahonestly'
-social_google: 'https://google.com/dellahonestly'
+social_facebook: ''
+social_twitter: ''
+social_pinterest: ''
+social_google: ''
 social_youtube: ''
-to_top: 1
+to_top: 0
 search_background_path: 'public://hero_2.jpg'
 search_background_upload: ''
 favicon_upload: ''

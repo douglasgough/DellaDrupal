@@ -14,10 +14,12 @@ module:
   contact_block: 0
   contextual: 0
   ctools: 0
+  daterange_compact: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
   devel: 0
+  drupalmoduleupgrader: 0
   ds: 0
   dynamic_page_cache: 0
   editor: 0
@@ -34,6 +36,7 @@ module:
   imce: 0
   kint: 0
   layout_discovery: 0
+  libraries: 0
   link: 0
   menu_ui: 0
   metatag: 0
@@ -59,6 +62,7 @@ module:
   tour: 0
   update: 0
   user: 0
+  views_accordion: 0
   views_ui: 0
   webform: 0
   webform_templates: 0

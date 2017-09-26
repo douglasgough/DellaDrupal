@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.listing.field_amenities
     - field.field.node.listing.field_bathrooms
     - field.field.node.listing.field_bedrooms
+    - field.field.node.listing.field_display_open_house
     - field.field.node.listing.field_email
     - field.field.node.listing.field_feature_sheet
     - field.field.node.listing.field_floors
@@ -51,15 +52,13 @@ third_party_settings:
         - field_image
         - body
         - field_price
-        - field_open_house_date
-        - field_opening_hours
         - field_gallery
         - field_feature_sheet
         - field_mls_number
         - field_verified
         - field_amenities
       parent_name: ''
-      weight: 6
+      weight: 7
       format_type: details
       format_settings:
         id: ''
@@ -80,7 +79,7 @@ third_party_settings:
         - field_half_baths
         - field_parking
       parent_name: ''
-      weight: 17
+      weight: 9
       format_type: details
       format_settings:
         id: ''
@@ -94,7 +93,7 @@ third_party_settings:
         - field_property_address
         - field_geolocation
       parent_name: ''
-      weight: 16
+      weight: 8
       format_type: details
       format_settings:
         id: ''
@@ -108,7 +107,7 @@ third_party_settings:
         - field_website
         - comment
       parent_name: ''
-      weight: 20
+      weight: 10
       format_type: details
       format_settings:
         id: ''
@@ -116,6 +115,20 @@ third_party_settings:
         open: false
         required_fields: true
       label: Communications
+    group_open_house:
+      children:
+        - field_display_open_house
+        - field_open_house_date
+        - field_opening_hours
+      parent_name: ''
+      weight: 6
+      format_type: details
+      format_settings:
+        id: ''
+        classes: ''
+        open: false
+        required_fields: true
+      label: 'Open house'
 id: node.listing.default
 targetEntityType: node
 bundle: listing
@@ -123,7 +136,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 44
+    weight: 45
     settings:
       rows: 9
       summary_rows: 3
@@ -143,7 +156,7 @@ content:
     third_party_settings: {  }
     region: content
   field_amenities:
-    weight: 52
+    weight: 53
     settings:
       match_operator: CONTAINS
       size: 60
@@ -165,6 +178,13 @@ content:
     third_party_settings: {  }
     type: number
     region: content
+  field_display_open_house:
+    weight: 53
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
   field_email:
     weight: 16
     settings:
@@ -174,7 +194,7 @@ content:
     type: email_default
     region: content
   field_feature_sheet:
-    weight: 49
+    weight: 50
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
@@ -188,7 +208,7 @@ content:
     type: number
     region: content
   field_gallery:
-    weight: 48
+    weight: 49
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
@@ -248,7 +268,7 @@ content:
     type: string_textfield
     region: content
   field_mls_number:
-    weight: 50
+    weight: 51
     settings:
       size: 60
       placeholder: ''
@@ -256,13 +276,13 @@ content:
     type: string_textfield
     region: content
   field_open_house_date:
-    weight: 46
+    weight: 54
     settings: {  }
     third_party_settings: {  }
     type: daterange_default
     region: content
   field_opening_hours:
-    weight: 47
+    weight: 55
     settings:
       rows: 5
       placeholder: ''
@@ -278,7 +298,7 @@ content:
     type: string_textfield
     region: content
   field_price:
-    weight: 45
+    weight: 46
     settings:
       placeholder: ''
     third_party_settings: {  }
@@ -307,7 +327,7 @@ content:
     type: options_buttons
     region: content
   field_verified:
-    weight: 51
+    weight: 52
     settings:
       display_label: true
     third_party_settings: {  }

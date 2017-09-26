@@ -1,17 +1,17 @@
-uuid: 9e3f717c-a4ac-44c2-bdd2-28a3a6e724ab
+uuid: ae76efa2-9439-4f67-817a-1588ce59e91b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_open_house_date
-    - node.type.listing
+    - field.storage.node.field_bob
+    - node.type.company
   module:
     - datetime_range
-id: node.listing.field_open_house_date
-field_name: field_open_house_date
+id: node.company.field_bob
+field_name: field_bob
 entity_type: node
-bundle: listing
-label: 'Open house'
+bundle: company
+label: Bob
 description: ''
 required: false
 translatable: false

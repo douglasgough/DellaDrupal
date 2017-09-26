@@ -9,8 +9,8 @@ id: node.listing.field_opening_hours
 field_name: field_opening_hours
 entity_type: node
 bundle: listing
-label: 'Open house'
-description: ''
+label: 'Open house details'
+description: 'Special instructions for the open house. Don''t enter dates and times here.'
 required: false
 translatable: false
 default_value: {  }

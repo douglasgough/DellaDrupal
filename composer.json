@@ -41,6 +41,7 @@
         "drupal/pathauto": "^1.0",
         "drupal/seckit": "^1.0@alpha",
         "drupal/taxonomy_menu": "^3.3",
+        "drupal/views_accordion": "^1.0",
         "drupal/webform": "^5.0@beta",
         "drush/drush": "~8.0",
         "webflo/drupal-finder": "^0.3.0",

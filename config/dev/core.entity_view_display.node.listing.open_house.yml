@@ -1,9 +1,9 @@
-uuid: 60edd7c9-9b55-4b8a-b6b8-e5c557d59ca9
+uuid: bd9596c5-e986-418c-811e-dd9ffd53d019
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.open_house
     - field.field.node.listing.body
     - field.field.node.listing.comment
     - field.field.node.listing.field_amenities
@@ -32,57 +32,48 @@ dependencies:
     - field.field.node.listing.field_verified
     - field.field.node.listing.field_website
     - field.field.node.listing.field_year_built
-    - image.style.medium
+    - image.style.listing_thumbnail
     - node.type.listing
   module:
     - address
     - daterange_compact
     - ds
     - image
-    - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: foundation_openhouse
+      id: foundation_card
       library: null
       disable_css: false
       entity_classes: all_classes
       settings: {  }
     regions:
-      left:
+      top:
         - field_image
-        - field_open_house_date
-      right:
+      center:
         - node_title
-        - body
+        - field_open_house_date
+      bottom:
         - field_property_address
     fields:
       node_title:
         plugin_id: node_title
-        weight: 2
+        weight: 1
         label: hidden
         formatter: default
-id: node.listing.teaser
+id: node.listing.open_house
 targetEntityType: node
 bundle: listing
-mode: teaser
+mode: open_house
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 3
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: right
   field_image:
     type: image
     weight: 0
-    region: left
+    region: top
     label: hidden
     settings:
-      image_style: medium
+      image_style: listing_thumbnail
       image_link: ''
     third_party_settings:
       ds:
@@ -93,9 +84,7 @@ content:
             lb-col: false
             classes: {  }
   field_open_house_date:
-    type: daterange_compact
-    weight: 1
-    region: left
+    weight: 2
     label: above
     settings:
       format_type: medium
@@ -103,19 +92,43 @@ content:
       ds:
         ds_limit: ''
         ft:
-          id: default
+          id: expert
           settings:
             lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: i
+            fi-cl: 'fa fa-calendar'
+            fi-at: ''
+            suffix: ''
+            lbw: false
             lb-col: false
-            classes: {  }
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: daterange_compact
+    region: center
   field_property_address:
     type: address_plain
-    weight: 4
-    region: right
-    label: hidden
+    weight: 3
+    region: bottom
+    label: above
     settings: {  }
     third_party_settings: {  }
 hidden:
+  body: true
   comment: true
   field_amenities: true
   field_bathrooms: true

@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.body
+    - field.storage.node.field_category
     - field.storage.node.field_image
     - field.storage.node.field_location
     - field.storage.node.field_price
@@ -63,7 +64,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 9
+          items_per_page: 6
           offset: 0
       style:
         type: default
@@ -344,6 +345,7 @@ display:
         - 'user.node_grants:view'
         - user.permissions
       tags:
+        - 'config:field.storage.node.field_category'
         - 'config:field.storage.node.field_image'
   block_1:
     display_plugin: block

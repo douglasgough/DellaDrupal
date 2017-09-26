@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - field.field.node.company.body
+    - field.field.node.company.field_bob
     - field.field.node.company.field_image
     - node.type.company
   module:
+    - datetime_range
     - image
     - text
     - user
@@ -21,6 +23,16 @@ content:
     weight: 101
     settings: {  }
     third_party_settings: {  }
+    region: content
+  field_bob:
+    weight: 103
+    label: above
+    settings:
+      separator: '-'
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: daterange_default
     region: content
   field_image:
     weight: 102

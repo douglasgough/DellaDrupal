@@ -11,7 +11,7 @@ _core:
 id: foundation_messages
 theme: foundation
 region: content_top
-weight: -13
+weight: -14
 provider: null
 plugin: system_messages_block
 settings:
