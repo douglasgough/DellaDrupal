@@ -10,13 +10,13 @@ dependencies:
     - foundation
 id: aboutfoundation
 theme: foundation
-region: footer_first
-weight: 0
+region: footer_second
+weight: -17
 provider: null
 plugin: 'block_content:dbeedb8d-e69b-468e-8c31-96ea10df1673'
 settings:
   id: 'block_content:dbeedb8d-e69b-468e-8c31-96ea10df1673'
-  label: 'About Foundation'
+  label: 'About Della Gough'
   provider: block_content
   label_display: visible
   status: true

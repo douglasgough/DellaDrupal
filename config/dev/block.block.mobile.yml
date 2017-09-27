@@ -11,7 +11,7 @@ dependencies:
 id: mobile
 theme: foundation
 region: front_page
-weight: -16
+weight: -17
 provider: null
 plugin: 'system_menu_block:mobile'
 settings:

@@ -392,7 +392,7 @@ display:
       defaults:
         pager: false
         title: false
-      title: 'News and Resources<strong>Helpful resources and information for buyers and sellers</strong>'
+      title: 'News and Resources'
     cache_metadata:
       max-age: -1
       contexts:

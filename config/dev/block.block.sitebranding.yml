@@ -1,0 +1,23 @@
+uuid: c040ee0d-8a1e-4245-95b4-6e1c2250658b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - foundation
+id: sitebranding
+theme: foundation
+region: footer_first
+weight: -18
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

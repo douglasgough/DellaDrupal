@@ -1,0 +1,25 @@
+uuid: ec457d50-c60f-46c1-8fd6-ef8f07e1e0cf
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7509e2b9-2e65-4efb-98ba-16270bbcad51'
+  module:
+    - block_content
+  theme:
+    - foundation
+id: suttonwestcoastgroup
+theme: foundation
+region: front_page
+weight: -18
+provider: null
+plugin: 'block_content:7509e2b9-2e65-4efb-98ba-16270bbcad51'
+settings:
+  id: 'block_content:7509e2b9-2e65-4efb-98ba-16270bbcad51'
+  label: 'Sutton West Coast Group'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
