@@ -10,6 +10,7 @@ dependencies:
   module:
     - ds
     - node
+    - slick_views
     - user
 id: testimonials
 label: Testimonials
@@ -213,12 +214,43 @@ display:
       display_extenders: {  }
       block_description: Testimonials
       style:
-        type: default
+        type: slick
         options:
-          grouping: {  }
-          row_class: ''
-          default_row_class: true
-          uses_fields: false
+          vanilla: true
+          optionset: default
+          skin: fullwidth
+          layout: center-top
+          caption:
+            field_short_quote: field_short_quote
+            field_client_name: field_client_name
+          optionset_thumbnail: ''
+          skin_thumbnail: ''
+          thumbnail_caption: ''
+          grid_header: ''
+          grid: null
+          grid_medium: null
+          grid_small: null
+          visible_items: null
+          preserve_keys: false
+          image: ''
+          thumbnail: ''
+          overlay: ''
+          title: ''
+          link: ''
+          class: ''
+          id: ''
+          override: false
+          overridables:
+            arrows: '0'
+            autoplay: '0'
+            dots: '0'
+            draggable: '0'
+            infinite: '0'
+            mouseWheel: '0'
+            randomize: '0'
+            variableWidth: '0'
+          cache: 0
+          current_view_mode: block_1
       defaults:
         style: false
         row: false
