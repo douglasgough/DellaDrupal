@@ -1,0 +1,1 @@
+drush sql-dump --result-file=~/backup/delladrupal_`date +"%m_%d_%Y-%H:%M"`.sql
