@@ -436,7 +436,7 @@ display:
         pager: false
         title: false
         fields: false
-      title: 'Top News You Shouldn''t Miss'
+      title: 'News & Resources'
       fields:
         field_image:
           id: field_image

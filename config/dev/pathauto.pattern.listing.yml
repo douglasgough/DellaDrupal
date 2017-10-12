@@ -7,16 +7,16 @@ dependencies:
 id: listing
 label: Listing
 type: 'canonical_entities:node'
-pattern: '/listing/[node:title]'
+pattern: '/listings/[node:title]'
 selection_criteria:
-  e3e2db7f-d394-4cdf-b0fe-891576fefe68:
+  58f58f96-68dd-4b4a-8a28-bc5d26776a2d:
     id: node_type
     bundles:
       listing: listing
     negate: false
     context_mapping:
       node: node
-    uuid: e3e2db7f-d394-4cdf-b0fe-891576fefe68
+    uuid: 58f58f96-68dd-4b4a-8a28-bc5d26776a2d
 selection_logic: and
 weight: -10
 relationships: {  }

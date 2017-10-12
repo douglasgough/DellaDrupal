@@ -57,26 +57,23 @@ third_party_settings:
         - field_price
         - field_open_house_date
       above_left:
+        - field_lot_area
+        - field_lot_dimensions
         - field_location
         - field_property
-        - field_property_address
-      above_center:
-        - field_lot_dimensions
-        - field_lot_area
-        - field_interior_area
         - field_parking
+        - field_property_address
       above_right:
+        - field_interior_area
         - field_year_built
         - field_floors
         - field_bedrooms
         - field_bathrooms
         - field_half_baths
+        - field_mls_number
+        - field_feature_sheet
       middle:
         - body
-      below_left:
-        - field_feature_sheet
-      below_right:
-        - field_mls_number
 id: node.listing.default
 targetEntityType: node
 bundle: listing
@@ -85,7 +82,7 @@ content:
   body:
     label: above
     type: text_default
-    weight: 16
+    weight: 18
     settings: {  }
     third_party_settings: {  }
     region: middle
@@ -109,11 +106,11 @@ content:
     region: above_right
   field_feature_sheet:
     weight: 17
-    label: above
+    label: inline
     settings: {  }
     third_party_settings: {  }
     type: file_default
-    region: below_left
+    region: above_right
   field_floors:
     weight: 12
     label: inline
@@ -142,7 +139,7 @@ content:
     type: number_integer
     region: above_right
   field_interior_area:
-    weight: 9
+    weight: 10
     label: inline
     settings:
       thousand_separator: ''
@@ -151,10 +148,10 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
-    region: above_center
+    region: above_right
   field_location:
     type: entity_reference_label
-    weight: 4
+    weight: 6
     region: above_left
     label: inline
     settings:
@@ -168,7 +165,7 @@ content:
             lb-col: false
             classes: {  }
   field_lot_area:
-    weight: 8
+    weight: 4
     label: inline
     settings:
       thousand_separator: ''
@@ -177,23 +174,23 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
     type: number_decimal
-    region: above_center
+    region: above_left
   field_lot_dimensions:
-    weight: 7
+    weight: 5
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: above_center
+    region: above_left
   field_mls_number:
-    weight: 18
-    label: above
+    weight: 16
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: below_right
+    region: above_right
   field_open_house_date:
     weight: 3
     label: above
@@ -232,13 +229,13 @@ content:
     type: daterange_compact
     region: top
   field_parking:
-    weight: 10
+    weight: 8
     label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: above_center
+    region: above_left
   field_price:
     type: number_decimal
     weight: 2
@@ -251,7 +248,7 @@ content:
       prefix_suffix: true
     third_party_settings: {  }
   field_property:
-    weight: 5
+    weight: 7
     label: inline
     settings:
       link: false
@@ -266,7 +263,7 @@ content:
     type: entity_reference_label
     region: above_left
   field_property_address:
-    weight: 6
+    weight: 9
     label: above
     settings: {  }
     third_party_settings: {  }

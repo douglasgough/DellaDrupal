@@ -1,0 +1,31 @@
+uuid: 2b4d592c-8401-4501-a498-75a32f26a870
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9326d7c1-4d9b-48b8-8301-97b6c0e6c2e9'
+  module:
+    - block_content
+    - system
+  theme:
+    - foundation
+id: marketinsight
+theme: foundation
+region: sidebar_first
+weight: -17
+provider: null
+plugin: 'block_content:9326d7c1-4d9b-48b8-8301-97b6c0e6c2e9'
+settings:
+  id: 'block_content:9326d7c1-4d9b-48b8-8301-97b6c0e6c2e9'
+  label: 'Get independent, up-to-date insights into the real estate market.'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: "/about\r\n/listing/*\r\n/testimonials/\r\n/testimonials/*"
+    negate: true
+    context_mapping: {  }

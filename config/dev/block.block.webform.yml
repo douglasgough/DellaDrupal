@@ -10,7 +10,7 @@ dependencies:
 id: webform
 theme: foundation
 region: sidebar_first
-weight: -15
+weight: -18
 provider: null
 plugin: webform_block
 settings:

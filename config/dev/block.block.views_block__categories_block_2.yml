@@ -11,7 +11,7 @@ dependencies:
 id: views_block__categories_block_2
 theme: foundation
 region: sidebar_first
-weight: -10
+weight: -12
 provider: null
 plugin: 'views_block:categories-block_2'
 settings:
