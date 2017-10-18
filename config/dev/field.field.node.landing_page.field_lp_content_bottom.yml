@@ -1,0 +1,21 @@
+uuid: 35b36e0b-f433-48fe-bfbc-f385043457ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lp_content_bottom
+    - node.type.landing_page
+  module:
+    - text
+id: node.landing_page.field_lp_content_bottom
+field_name: field_lp_content_bottom
+entity_type: node
+bundle: landing_page
+label: 'Landing page content bottom'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

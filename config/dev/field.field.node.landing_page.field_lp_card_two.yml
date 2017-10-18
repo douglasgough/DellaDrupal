@@ -1,0 +1,34 @@
+uuid: d5328de0-7a31-4f71-9f89-4180f4a58ae0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lp_card_two
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.card
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_lp_card_two
+field_name: field_lp_card_two
+entity_type: node
+bundle: landing_page
+label: 'Card Two'
+description: 'Card two'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      card: card
+    target_bundles_drag_drop:
+      card:
+        enabled: true
+        weight: 3
+      cta_hero:
+        weight: 4
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,31 @@
+uuid: 566cedd5-6856-4f0f-8352-528812c55119
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_landing_page_hero
+    - node.type.landing_page
+    - paragraphs.paragraphs_type.cta_hero
+  module:
+    - entity_reference_revisions
+id: node.landing_page.field_landing_page_hero
+field_name: field_landing_page_hero
+entity_type: node
+bundle: landing_page
+label: 'Landing page hero'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      cta_hero: cta_hero
+    target_bundles_drag_drop:
+      cta_hero:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

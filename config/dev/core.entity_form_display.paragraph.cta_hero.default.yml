@@ -1,0 +1,54 @@
+uuid: 1e5b1ff2-d02d-4bc9-a8ca-236460137b6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_hero.field_cta_hero_button
+    - field.field.paragraph.cta_hero.field_cta_hero_image
+    - field.field.paragraph.cta_hero.field_cta_hero_message
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.cta_hero
+  module:
+    - image
+    - link_attributes
+    - text
+id: paragraph.cta_hero.default
+targetEntityType: paragraph
+bundle: cta_hero
+mode: default
+content:
+  field_cta_hero_button:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+      enabled_attributes:
+        id: false
+        name: false
+        target: true
+        rel: true
+        class: true
+        accesskey: false
+    third_party_settings: {  }
+    type: link_attributes
+    region: content
+  field_cta_hero_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_cta_hero_message:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

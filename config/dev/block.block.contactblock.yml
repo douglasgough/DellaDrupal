@@ -7,6 +7,7 @@ dependencies:
   module:
     - contact_block
     - ctools
+    - system
   theme:
     - foundation
 id: contactblock
@@ -29,3 +30,8 @@ visibility:
     negate: true
     context_mapping:
       node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /market-insights
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,102 @@
+uuid: 04cae436-1819-4e00-a514-8f20beec779c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.card.field_card_image
+    - field.field.paragraph.card.field_card_link
+    - field.field.paragraph.card.field_card_text
+    - field.field.paragraph.card.field_card_title
+    - paragraphs.paragraphs_type.card
+  module:
+    - ds
+    - link
+    - responsive_image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_card
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - field_card_title
+        - field_card_image
+      center:
+        - field_card_text
+      bottom:
+        - field_card_link
+id: paragraph.card.default
+targetEntityType: paragraph
+bundle: card
+mode: default
+content:
+  field_card_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_link: ''
+      responsive_image_style: ''
+    third_party_settings: {  }
+    type: responsive_image
+    region: top
+  field_card_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link_separate
+    region: bottom
+  field_card_text:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: center
+  field_card_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: h3
+            fi-cl: card-title
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: string
+    region: top
+hidden: {  }
