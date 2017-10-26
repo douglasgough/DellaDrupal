@@ -1,20 +1,20 @@
-uuid: 566cedd5-6856-4f0f-8352-528812c55119
+uuid: e620dab3-6f83-469f-9e44-a17a6411a6b7
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_landing_page_hero
+    - field.storage.node.field_lp_fw_segment
     - node.type.landing_page
-    - paragraphs.paragraphs_type.cta_hero
+    - paragraphs.paragraphs_type.full_width_segment
   module:
     - entity_reference_revisions
-id: node.landing_page.field_landing_page_hero
-field_name: field_landing_page_hero
+id: node.landing_page.field_lp_fw_segment
+field_name: field_lp_fw_segment
 entity_type: node
 bundle: landing_page
-label: Hero
+label: 'Full Width Segment'
 description: ''
-required: true
+required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
@@ -23,15 +23,15 @@ settings:
   handler_settings:
     negate: 0
     target_bundles:
-      cta_hero: cta_hero
+      full_width_segment: full_width_segment
     target_bundles_drag_drop:
-      cta_hero:
-        enabled: true
-        weight: 2
       card:
         weight: 4
         enabled: false
-      full_width_segment:
-        weight: 6
+      cta_hero:
+        weight: 5
         enabled: false
+      full_width_segment:
+        enabled: true
+        weight: 6
 field_type: entity_reference_revisions

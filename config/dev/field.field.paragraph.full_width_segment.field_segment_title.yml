@@ -1,0 +1,19 @@
+uuid: 1d164723-cde7-418d-aa74-66757d1d8911
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_segment_title
+    - paragraphs.paragraphs_type.full_width_segment
+id: paragraph.full_width_segment.field_segment_title
+field_name: field_segment_title
+entity_type: paragraph
+bundle: full_width_segment
+label: 'Segment title'
+description: 'Title about the segment content'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

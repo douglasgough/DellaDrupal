@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.landing_page.field_lp_card_three
     - field.field.node.landing_page.field_lp_card_two
     - field.field.node.landing_page.field_lp_content_bottom
+    - field.field.node.landing_page.field_lp_fw_segment
     - node.type.landing_page
   module:
     - ds
@@ -36,6 +37,7 @@ third_party_settings:
       above_right:
         - field_lp_card_three
       middle:
+        - field_lp_fw_segment
         - body
       bottom:
         - field_lp_content_bottom
@@ -47,7 +49,7 @@ content:
   body:
     label: hidden
     type: text_trimmed
-    weight: 5
+    weight: 6
     settings:
       trim_length: 600
     third_party_settings: {  }
@@ -96,12 +98,50 @@ content:
     third_party_settings: {  }
     region: above_center
   field_lp_content_bottom:
-    weight: 6
-    label: above
+    weight: 7
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
     type: text_trimmed
     region: bottom
+  field_lp_fw_segment:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: fullwidth
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: field__item
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    region: middle
 hidden:
   links: true

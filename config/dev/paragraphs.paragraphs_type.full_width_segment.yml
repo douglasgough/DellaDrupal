@@ -1,0 +1,9 @@
+uuid: fbd74d6a-5399-41e5-9b67-91a616bd1e58
+langcode: en
+status: true
+dependencies: {  }
+id: full_width_segment
+label: 'Full Width Segment'
+icon_uuid: null
+description: 'Full width text and image segment. '
+behavior_plugins: {  }

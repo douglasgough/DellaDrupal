@@ -11,7 +11,7 @@ id: node.landing_page.field_lp_content_bottom
 field_name: field_lp_content_bottom
 entity_type: node
 bundle: landing_page
-label: 'Landing page content bottom'
+label: 'Content bottom'
 description: ''
 required: false
 translatable: false
