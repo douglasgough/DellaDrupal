@@ -1,0 +1,23 @@
+uuid: fdbf2a58-6bed-4998-b64a-87ceb0ca2366
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bedrooms
+    - node.type.listing
+id: node.listing.field_bedrooms
+field_name: field_bedrooms
+entity_type: node
+bundle: listing
+label: Bedrooms
+description: 'The number of bedrooms'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

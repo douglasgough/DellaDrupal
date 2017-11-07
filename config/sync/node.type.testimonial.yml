@@ -1,0 +1,17 @@
+uuid: 798c106c-88d3-43fc-a708-e42ed06de042
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Testimonial
+type: testimonial
+description: 'Something nice that a client has said about us.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

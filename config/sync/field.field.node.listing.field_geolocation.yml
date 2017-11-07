@@ -1,0 +1,21 @@
+uuid: a4dd614e-fa67-49e4-9340-df3967e1c90d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_geolocation
+    - node.type.listing
+  module:
+    - geolocation
+id: node.listing.field_geolocation
+field_name: field_geolocation
+entity_type: node
+bundle: listing
+label: 'Google Map'
+description: 'Enter latitude and longitude '
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

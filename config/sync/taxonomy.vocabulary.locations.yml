@@ -1,0 +1,9 @@
+uuid: 2435e73c-cb9d-40ca-8733-cd43092aa514
+langcode: en
+status: true
+dependencies: {  }
+name: Location
+vid: locations
+description: 'Geographic regions for listings'
+hierarchy: 0
+weight: 0

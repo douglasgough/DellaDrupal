@@ -1,0 +1,24 @@
+uuid: 91214080-a370-4ec2-8e3c-368c54ed0716
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.testimonials
+  module:
+    - views
+  theme:
+    - foundation
+id: views_block__testimonials_block_1
+theme: foundation
+region: front_page
+weight: -15
+provider: null
+plugin: 'views_block:testimonials-block_1'
+settings:
+  id: 'views_block:testimonials-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

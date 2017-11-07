@@ -1,0 +1,22 @@
+uuid: 6c51cd41-5c29-47c7-9336-26602ca61452
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - foundation
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: foundation_messages
+theme: foundation
+region: content_top
+weight: -14
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

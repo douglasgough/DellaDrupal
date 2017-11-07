@@ -1,0 +1,23 @@
+uuid: 6658fb92-e8ba-43e9-9cd7-e4a64ccfa2f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lot_area
+    - node.type.listing
+id: node.listing.field_lot_area
+field_name: field_lot_area
+entity_type: node
+bundle: listing
+label: 'Lot Area'
+description: 'Lot area measured in square feet'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ' sq.ft.'
+field_type: float

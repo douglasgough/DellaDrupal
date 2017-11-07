@@ -1,0 +1,23 @@
+uuid: 2b32b0d5-97ad-45bd-8ef5-119d0fdd0aaa
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: property_types
+label: 'Property Types'
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary:machine-name]/[term:name]'
+selection_criteria:
+  8914cc06-bc4c-452e-be93-db2dcf1958b4:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      property_type: property_type
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 8914cc06-bc4c-452e-be93-db2dcf1958b4
+selection_logic: and
+weight: -5
+relationships: {  }

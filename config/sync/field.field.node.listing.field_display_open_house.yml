@@ -1,0 +1,23 @@
+uuid: 305774fa-f958-46d0-bc44-2b72be538e35
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_display_open_house
+    - node.type.listing
+id: node.listing.field_display_open_house
+field_name: field_display_open_house
+entity_type: node
+bundle: listing
+label: 'Display Open House'
+description: 'Choose whether to display the open house date and time in priority menus and CTAs.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Show
+  off_label: Hide
+field_type: boolean

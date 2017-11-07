@@ -1,0 +1,27 @@
+uuid: d625afeb-85ef-41c8-b004-de588f388a9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feature_sheet
+    - node.type.listing
+  module:
+    - file
+id: node.listing.field_feature_sheet
+field_name: field_feature_sheet
+entity_type: node
+bundle: listing
+label: 'Feature Sheet'
+description: 'Downloadable feature sheet PDF.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: feature_sheets
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: false
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

@@ -1,0 +1,23 @@
+uuid: c601825d-174e-4edc-a5e2-61005484c188
+langcode: en
+status: true
+dependencies: {  }
+name: listing_gallery
+label: 'Listing Gallery'
+effects:
+  7a3de2da-b762-43f2-9cea-b51ef7ac4dba:
+    uuid: 7a3de2da-b762-43f2-9cea-b51ef7ac4dba
+    id: image_scale
+    weight: 1
+    data:
+      width: 830
+      height: null
+      upscale: false
+  bc536cd9-1533-4078-b4cf-10d5e01c9528:
+    uuid: bc536cd9-1533-4078-b4cf-10d5e01c9528
+    id: image_crop
+    weight: 2
+    data:
+      width: 830
+      height: 480
+      anchor: center-center

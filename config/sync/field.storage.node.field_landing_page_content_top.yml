@@ -1,0 +1,19 @@
+uuid: c1e606b7-9385-4061-b7aa-2f030476ec5f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_landing_page_content_top
+field_name: field_landing_page_content_top
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

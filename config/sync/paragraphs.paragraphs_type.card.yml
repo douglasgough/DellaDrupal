@@ -1,0 +1,9 @@
+uuid: 1ea01f41-64e0-4255-91da-28728ce19c93
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: Card
+icon_uuid: null
+description: 'A block of content that is less that full width.'
+behavior_plugins: {  }

@@ -1,0 +1,95 @@
+uuid: 4a98ef2a-e1ea-49c5-bde7-362a7040dbc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_width_segment.field_segment_image
+    - field.field.paragraph.full_width_segment.field_segment_text
+    - field.field.paragraph.full_width_segment.field_segment_title
+    - paragraphs.paragraphs_type.full_width_segment
+    - responsive_image.styles.full_width_segment
+  module:
+    - ds
+    - responsive_image
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_fw_segment
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - field_segment_title
+      left:
+        - field_segment_image
+      right:
+        - field_segment_text
+id: paragraph.full_width_segment.default
+targetEntityType: paragraph
+bundle: full_width_segment
+mode: default
+content:
+  field_segment_image:
+    weight: 1
+    label: hidden
+    settings:
+      responsive_image_style: full_width_segment
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: responsive_image
+    region: left
+  field_segment_text:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: right
+  field_segment_title:
+    weight: 0
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: h3
+            fi-cl: title
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: string
+    region: top
+hidden: {  }

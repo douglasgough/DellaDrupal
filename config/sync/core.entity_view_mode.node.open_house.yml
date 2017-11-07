@@ -1,0 +1,10 @@
+uuid: a9f5c598-93df-441b-83e3-c2a0de3817bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.open_house
+label: Card
+targetEntityType: node
+cache: true

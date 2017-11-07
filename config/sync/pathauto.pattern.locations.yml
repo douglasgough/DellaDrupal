@@ -1,0 +1,23 @@
+uuid: 686d75e9-5131-471c-a890-0f10395441fe
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - taxonomy
+id: locations
+label: Locations
+type: 'canonical_entities:taxonomy_term'
+pattern: '[term:vocabulary:machine-name]/[term:name]'
+selection_criteria:
+  33e9039d-6c7d-4bd3-ae17-671108e9cfd9:
+    id: 'entity_bundle:taxonomy_term'
+    bundles:
+      locations: locations
+    negate: false
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    uuid: 33e9039d-6c7d-4bd3-ae17-671108e9cfd9
+selection_logic: and
+weight: -7
+relationships: {  }

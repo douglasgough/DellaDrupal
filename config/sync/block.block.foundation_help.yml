@@ -1,0 +1,22 @@
+uuid: b4fd9040-23dd-4c0e-b13e-6d6f9e8dd91e
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - foundation
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: foundation_help
+theme: foundation
+region: content_top
+weight: -15
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

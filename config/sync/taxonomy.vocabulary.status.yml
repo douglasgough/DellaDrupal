@@ -1,0 +1,9 @@
+uuid: f46c443c-f8ef-46ee-9fba-0fea6aefcba8
+langcode: en
+status: true
+dependencies: {  }
+name: Status
+vid: status
+description: 'Status of listed property'
+hierarchy: 0
+weight: 0

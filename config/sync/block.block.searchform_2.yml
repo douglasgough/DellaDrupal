@@ -1,0 +1,20 @@
+uuid: 5e2dc10f-8390-49ca-a25e-57a4917a408e
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - foundation
+id: searchform_2
+theme: foundation
+region: footer_third
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }

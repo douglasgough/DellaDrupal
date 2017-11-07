@@ -1,0 +1,67 @@
+uuid: 2e5642d1-b5c3-4e74-87d2-0d6ac10bb29b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.testimonial.body
+    - field.field.node.testimonial.field_client_location
+    - field.field.node.testimonial.field_client_name
+    - field.field.node.testimonial.field_short_quote
+    - node.type.testimonial
+  module:
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_fw_segment
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_client_name
+        - field_client_location
+      right:
+        - body
+      top:
+        - field_short_quote
+id: node.testimonial.default
+targetEntityType: node
+bundle: testimonial
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    region: right
+  field_client_location:
+    weight: 2
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: left
+  field_client_name:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: left
+  field_short_quote:
+    weight: 4
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: top
+hidden:
+  links: true

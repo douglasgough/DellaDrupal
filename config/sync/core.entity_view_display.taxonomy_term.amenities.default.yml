@@ -1,0 +1,32 @@
+uuid: 53560cc7-2174-48dd-91b1-89197f54dd4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.amenities.field_icon
+    - taxonomy.vocabulary.amenities
+  module:
+    - image
+    - text
+id: taxonomy_term.amenities.default
+targetEntityType: taxonomy_term
+bundle: amenities
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_icon:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

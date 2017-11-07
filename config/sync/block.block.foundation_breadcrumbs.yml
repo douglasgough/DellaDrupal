@@ -1,0 +1,27 @@
+uuid: 961d054f-d10c-4fc5-a8e4-c785067fb185
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - foundation
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: foundation_breadcrumbs
+theme: foundation
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

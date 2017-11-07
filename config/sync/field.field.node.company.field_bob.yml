@@ -1,0 +1,21 @@
+uuid: ae76efa2-9439-4f67-817a-1588ce59e91b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bob
+    - node.type.company
+  module:
+    - datetime_range
+id: node.company.field_bob
+field_name: field_bob
+entity_type: node
+bundle: company
+label: Bob
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

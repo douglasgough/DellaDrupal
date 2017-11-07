@@ -1,0 +1,28 @@
+uuid: 46f89778-e096-4cb4-bb89-850cf2053edd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_client_location
+    - node.type.testimonial
+    - taxonomy.vocabulary.locations
+id: node.testimonial.field_client_location
+field_name: field_client_location
+entity_type: node
+bundle: testimonial
+label: 'Client Location'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      locations: locations
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

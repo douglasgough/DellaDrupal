@@ -1,0 +1,21 @@
+uuid: 8feef15e-0e35-431c-bbbe-8199776a921e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_hero_message
+    - paragraphs.paragraphs_type.cta_hero
+  module:
+    - text
+id: paragraph.cta_hero.field_cta_hero_message
+field_name: field_cta_hero_message
+entity_type: paragraph
+bundle: cta_hero
+label: 'CTA hero message'
+description: 'The CTA value proposition'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
