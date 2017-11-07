@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "e1d7bbf7d36ffe3255dc0709c8f257b7",
-=======
-    "content-hash": "501fe942f85c147b250443f4487594e5",
->>>>>>> 56d08eee2376fa1905a5106189e5b3dcb18c3b7d
+    "content-hash": "c2dbce3d0d0f3243b100e509e2e61acd",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1450,7 +1446,6 @@
             }
         },
         {
-<<<<<<< HEAD
             "name": "drupal/antibot",
             "version": "1.1.0",
             "source": {
@@ -1463,7 +1458,41 @@
                 "url": "https://ftp.drupal.org/files/projects/antibot-8.x-1.1.zip",
                 "reference": "8.x-1.1",
                 "shasum": "761eff42af14d45b1418c7fd7eeaaa3fd1fca309"
-=======
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1467120839",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "mstef",
+                    "homepage": "https://www.drupal.org/user/107190"
+                }
+            ],
+            "description": "Prevent forms from being submitted without Javascript enabled",
+            "homepage": "https://www.drupal.org/project/antibot",
+            "support": {
+                "source": "http://cgit.drupalcode.org/antibot"
+            }
+        },
+        {
             "name": "drupal/backup_migrate",
             "version": "4.0.0-beta3",
             "source": {
@@ -1476,7 +1505,6 @@
                 "url": "https://ftp.drupal.org/files/projects/backup_migrate-8.x-4.0-beta3.zip",
                 "reference": "8.x-4.0-beta3",
                 "shasum": "5f78a25aaa207c12ae32f08fa00bd3fa51c49d70"
->>>>>>> 56d08eee2376fa1905a5106189e5b3dcb18c3b7d
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1484,16 +1512,6 @@
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1467120839",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-=======
                     "dev-4.x": "4.x-dev"
                 },
                 "drupal": {
@@ -1502,7 +1520,6 @@
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
->>>>>>> 56d08eee2376fa1905a5106189e5b3dcb18c3b7d
                     }
                 }
             },
@@ -1512,16 +1529,6 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
-                    "name": "mstef",
-                    "homepage": "https://www.drupal.org/user/107190"
-                }
-            ],
-            "description": "Prevent forms from being submitted without Javascript enabled",
-            "homepage": "https://www.drupal.org/project/antibot",
-            "support": {
-                "source": "http://cgit.drupalcode.org/antibot"
-=======
                     "name": "Ronan Dowling",
                     "homepage": "https://www.drupal.org/u/ronan",
                     "role": "Maintainer"
@@ -1540,7 +1547,6 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/backup_migrate",
                 "issues": "https://www.drupal.org/project/issues/backup_migrate"
->>>>>>> 56d08eee2376fa1905a5106189e5b3dcb18c3b7d
             }
         },
         {
