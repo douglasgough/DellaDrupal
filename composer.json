@@ -44,6 +44,7 @@
         "drupal/paragraphs": "^1.1",
         "drupal/pathauto": "^1.0",
         "drupal/seckit": "^1.0@alpha",
+        "drupal/simple_sitemap": "^2.10",
         "drupal/slick": "^1.0",
         "drupal/slick_extras": "^1.0@beta",
         "drupal/slick_views": "^1.0@RC",
