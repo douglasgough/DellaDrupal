@@ -23,6 +23,7 @@
         "drupal/abjs": "^1.1",
         "drupal/address": "~1.0",
         "drupal/admin_toolbar": "^1.19",
+        "drupal/backup_migrate": "^4.0@beta",
         "drupal/bg_image_formatter": "^1.0@beta",
         "drupal/console": "~1.0",
         "drupal/contact_block": "^1.4",
