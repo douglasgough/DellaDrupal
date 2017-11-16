@@ -1,0 +1,30 @@
+uuid: 5f8947fe-e306-4c4a-9eff-d178d8a3b21a
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.max_325x325
+    - image.style.max_500x500
+    - image.style.max_650x650
+  theme:
+    - foundation
+id: blog_image
+label: 'Blog image'
+image_style_mappings:
+  -
+    breakpoint_id: foundation.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_500x500
+  -
+    breakpoint_id: foundation.mobile-landscape
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: foundation.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_325x325
+breakpoint_group: foundation
+fallback_image_style: max_500x500

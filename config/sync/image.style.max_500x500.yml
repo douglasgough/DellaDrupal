@@ -1,0 +1,15 @@
+uuid: 8219fbc3-92b3-4190-a122-4837f4aaea8a
+langcode: en
+status: true
+dependencies: {  }
+name: max_500x500
+label: 'Max 500x500'
+effects:
+  75acb149-29de-4589-b087-682211c2abdb:
+    uuid: 75acb149-29de-4589-b087-682211c2abdb
+    id: image_scale
+    weight: 1
+    data:
+      width: 500
+      height: 500
+      upscale: false

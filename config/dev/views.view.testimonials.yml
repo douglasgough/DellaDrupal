@@ -217,8 +217,8 @@ display:
         type: slick
         options:
           vanilla: true
-          optionset: default
-          skin: fullwidth
+          optionset: testimonials
+          skin: default
           layout: center-top
           caption:
             field_short_quote: field_short_quote

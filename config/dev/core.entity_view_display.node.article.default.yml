@@ -9,12 +9,12 @@ dependencies:
     - field.field.node.article.field_category
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.large_wide
     - node.type.article
+    - responsive_image.styles.blog_image
   module:
     - comment
     - ds
-    - image
+    - responsive_image
     - text
     - user
 _core:
@@ -49,13 +49,13 @@ content:
     type: entity_reference_label
     region: content
   field_image:
-    type: image
+    type: responsive_image
     weight: 0
     region: content
     label: hidden
     settings:
-      image_style: large_wide
-      image_link: ''
+      responsive_image_style: blog_image
+      image_link: content
     third_party_settings:
       ds:
         ft:

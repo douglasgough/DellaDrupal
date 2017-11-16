@@ -1,0 +1,46 @@
+uuid: 50f3ede1-2c61-446a-8738-97d3ff5c898c
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.large
+    - image.style.max_325x325
+    - image.style.max_500x500
+    - image.style.max_650x650
+  theme:
+    - foundation
+id: cta_hero_image_large
+label: 'CTA hero image large'
+image_style_mappings:
+  -
+    breakpoint_id: foundation.largedesktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_650x650
+  -
+    breakpoint_id: foundation.desktop
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_500x500
+  -
+    breakpoint_id: foundation.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_325x325
+  -
+    breakpoint_id: foundation.mobile-landscape
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_325x325
+  -
+    breakpoint_id: foundation.mobile
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: large
+  -
+    breakpoint_id: foundation.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: max_325x325
+breakpoint_group: foundation
+fallback_image_style: max_650x650
