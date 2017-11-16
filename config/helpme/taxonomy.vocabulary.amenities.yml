@@ -1,0 +1,9 @@
+uuid: 22f5bcc9-3e99-499e-9e6e-aa6785f917b1
+langcode: en
+status: true
+dependencies: {  }
+name: Amenities
+vid: amenities
+description: 'Nearby amenities for listings'
+hierarchy: 0
+weight: 0

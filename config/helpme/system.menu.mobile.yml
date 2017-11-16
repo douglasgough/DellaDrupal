@@ -1,0 +1,8 @@
+uuid: d6a3612e-8b05-498f-95d7-4e8fce63d9fe
+langcode: en
+status: true
+dependencies: {  }
+id: mobile
+label: Mobile
+description: 'High priority links for mobile users'
+locked: false

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - image.style.medium
+    - image.style.small_150x150
+    - image.style.thumbnail
   theme:
     - foundation
 id: full_width_segment
@@ -14,5 +16,15 @@ image_style_mappings:
     multiplier: 1x
     image_mapping_type: image_style
     image_mapping: medium
+  -
+    breakpoint_id: foundation.tablet
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: small_150x150
+  -
+    breakpoint_id: foundation.small
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail
 breakpoint_group: foundation
 fallback_image_style: medium

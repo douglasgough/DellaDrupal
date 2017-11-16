@@ -1,0 +1,23 @@
+uuid: 39b92364-21d4-414a-bec0-935bd3b42048
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: uKgwQEQEWbnGjAqxKpZufzhnECt1acCS2-zF_mF6nFo
+id: node
+label: Content
+tags:
+  description: '[node:summary]'
+  title: '[node:title]'
+  fb_app_id: '124285357980358'
+  fb_admins: 'dellahonestly,dougwgough'
+  og_type: article
+  article_author: dellahonestly
+  og_url: '[current-page:url]'
+  article_publisher: dellahonestly
+  og_image_type: image/jpeg
+  og_image_width: '1500'
+  og_image: '[node:field_image]'
+  og_description: '[node:summary]'
+  og_site_name: 'Della Gough Vancouver Realtor'
+  og_title: '[current-page:title]'

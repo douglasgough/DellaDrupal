@@ -1,0 +1,18 @@
+uuid: 205db65f-4b12-46cf-8970-67091d50eab9
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Landing Page'
+type: landing_page
+description: 'A page tied to a marketing campaign, with a specific all to action.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,143 @@
+uuid: 60edd7c9-9b55-4b8a-b6b8-e5c557d59ca9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.listing.body
+    - field.field.node.listing.comment
+    - field.field.node.listing.field_amenities
+    - field.field.node.listing.field_bathrooms
+    - field.field.node.listing.field_bedrooms
+    - field.field.node.listing.field_display_open_house
+    - field.field.node.listing.field_email
+    - field.field.node.listing.field_feature_sheet
+    - field.field.node.listing.field_floors
+    - field.field.node.listing.field_gallery
+    - field.field.node.listing.field_geolocation
+    - field.field.node.listing.field_half_baths
+    - field.field.node.listing.field_image
+    - field.field.node.listing.field_interior_area
+    - field.field.node.listing.field_location
+    - field.field.node.listing.field_lot_area
+    - field.field.node.listing.field_lot_dimensions
+    - field.field.node.listing.field_mls_number
+    - field.field.node.listing.field_open_house_date
+    - field.field.node.listing.field_opening_hours
+    - field.field.node.listing.field_parking
+    - field.field.node.listing.field_price
+    - field.field.node.listing.field_property
+    - field.field.node.listing.field_property_address
+    - field.field.node.listing.field_property_status
+    - field.field.node.listing.field_verified
+    - field.field.node.listing.field_website
+    - field.field.node.listing.field_year_built
+    - image.style.medium
+    - node.type.listing
+  module:
+    - address
+    - daterange_compact
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_openhouse
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      left:
+        - field_image
+        - field_open_house_date
+      right:
+        - node_title
+        - body
+        - field_property_address
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 2
+        label: hidden
+        formatter: default
+id: node.listing.teaser
+targetEntityType: node
+bundle: listing
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: right
+  field_image:
+    type: image
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_open_house_date:
+    type: daterange_compact
+    weight: 1
+    region: left
+    label: above
+    settings:
+      format_type: medium
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_property_address:
+    type: address_plain
+    weight: 4
+    region: right
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  comment: true
+  field_amenities: true
+  field_bathrooms: true
+  field_bedrooms: true
+  field_display_open_house: true
+  field_email: true
+  field_feature_sheet: true
+  field_floors: true
+  field_gallery: true
+  field_geolocation: true
+  field_half_baths: true
+  field_interior_area: true
+  field_location: true
+  field_lot_area: true
+  field_lot_dimensions: true
+  field_mls_number: true
+  field_opening_hours: true
+  field_parking: true
+  field_price: true
+  field_property: true
+  field_property_status: true
+  field_verified: true
+  field_website: true
+  field_year_built: true
+  links: true

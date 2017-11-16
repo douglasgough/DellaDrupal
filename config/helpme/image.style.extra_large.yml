@@ -1,0 +1,15 @@
+uuid: 300ba9c4-99dc-4d54-a1ae-e445154b388a
+langcode: en
+status: true
+dependencies: {  }
+name: extra_large
+label: 'Extra Large (640x640)'
+effects:
+  9b486b39-e5fa-452c-94de-2764dc931d2d:
+    uuid: 9b486b39-e5fa-452c-94de-2764dc931d2d
+    id: image_scale
+    weight: 1
+    data:
+      width: 640
+      height: 640
+      upscale: false

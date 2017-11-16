@@ -1,0 +1,25 @@
+uuid: b2919f1c-1347-4c44-b024-c29c0444a233
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:dbeedb8d-e69b-468e-8c31-96ea10df1673'
+  module:
+    - block_content
+  theme:
+    - foundation
+id: aboutfoundation
+theme: foundation
+region: footer_second
+weight: -17
+provider: null
+plugin: 'block_content:dbeedb8d-e69b-468e-8c31-96ea10df1673'
+settings:
+  id: 'block_content:dbeedb8d-e69b-468e-8c31-96ea10df1673'
+  label: 'About Della Gough'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

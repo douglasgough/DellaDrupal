@@ -1,0 +1,147 @@
+uuid: 11b59a89-8f3d-4b4d-acf8-1261efe25049
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.landing_page.body
+    - field.field.node.landing_page.field_landing_page_content_top
+    - field.field.node.landing_page.field_landing_page_hero
+    - field.field.node.landing_page.field_lp_card_one
+    - field.field.node.landing_page.field_lp_card_three
+    - field.field.node.landing_page.field_lp_card_two
+    - field.field.node.landing_page.field_lp_content_bottom
+    - field.field.node.landing_page.field_lp_fw_segment
+    - node.type.landing_page
+  module:
+    - ds
+    - entity_reference_revisions
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_3col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      hero:
+        - field_landing_page_hero
+      top:
+        - field_landing_page_content_top
+      above_left:
+        - field_lp_card_one
+      above_center:
+        - field_lp_card_two
+      above_right:
+        - field_lp_card_three
+      middle:
+        - field_lp_fw_segment
+        - body
+      bottom:
+        - field_lp_content_bottom
+id: node.landing_page.default
+targetEntityType: node
+bundle: landing_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_trimmed
+    weight: 6
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: middle
+  field_landing_page_content_top:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: top
+  field_landing_page_hero:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: hero
+  field_lp_card_one:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: above_left
+  field_lp_card_three:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: above_right
+  field_lp_card_two:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: above_center
+  field_lp_content_bottom:
+    weight: 7
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+    region: bottom
+  field_lp_fw_segment:
+    type: entity_reference_revisions_entity_view
+    weight: 5
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: fullwidth
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: div
+            fi-cl: field__item
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    region: middle
+hidden:
+  links: true

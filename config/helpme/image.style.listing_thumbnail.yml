@@ -1,0 +1,14 @@
+uuid: 7d0e2bcf-7118-4187-8e4e-7dbb27f0f557
+langcode: en
+status: true
+dependencies: {  }
+name: listing_thumbnail
+label: 'Listing Thumbnail (480x360)'
+effects:
+  340386fd-33f6-43e9-86f2-e19eb4b5c896:
+    uuid: 340386fd-33f6-43e9-86f2-e19eb4b5c896
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 480
+      height: 360

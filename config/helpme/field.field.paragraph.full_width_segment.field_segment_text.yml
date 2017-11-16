@@ -1,0 +1,21 @@
+uuid: 7710225d-1794-42d9-9b8d-d64daf4861b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_segment_text
+    - paragraphs.paragraphs_type.full_width_segment
+  module:
+    - text
+id: paragraph.full_width_segment.field_segment_text
+field_name: field_segment_text
+entity_type: paragraph
+bundle: full_width_segment
+label: 'Segment text'
+description: 'This is the body of the segment'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

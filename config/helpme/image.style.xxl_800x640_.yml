@@ -1,0 +1,15 @@
+uuid: 6eeb879b-3dd1-4fde-9171-b85ae3f02bef
+langcode: en
+status: true
+dependencies: {  }
+name: xxl_800x640_
+label: 'XXL (800x640)'
+effects:
+  ecbd3e0f-cd94-4bff-b5e1-0befd5eeb201:
+    uuid: ecbd3e0f-cd94-4bff-b5e1-0befd5eeb201
+    id: image_scale
+    weight: 1
+    data:
+      width: 800
+      height: 640
+      upscale: false

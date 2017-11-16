@@ -1,0 +1,9 @@
+uuid: 7f95d3c8-8e6c-437d-8c44-915ce96d1a3d
+langcode: en
+status: true
+dependencies: {  }
+id: cta_hero
+label: 'CTA hero'
+icon_uuid: null
+description: 'A hero CTA with background image'
+behavior_plugins: {  }

@@ -1,0 +1,37 @@
+uuid: 848a06c1-bc35-4c07-97a2-323dbeb94270
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - ctools
+    - system
+  theme:
+    - foundation
+id: contactblock
+theme: foundation
+region: sidebar_first
+weight: -15
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: Contact
+  provider: contact_block
+  label_display: visible
+  contact_form: feedback
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      listing: listing
+    negate: true
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: /market-insights
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,25 @@
+uuid: cab01a78-6c0d-4094-accc-5e2b753870aa
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:c13568f8-3b74-4a8e-9170-cc93b431d8fc'
+  module:
+    - block_content
+  theme:
+    - foundation
+id: calltoaction
+theme: foundation
+region: bottom
+weight: -12
+provider: null
+plugin: 'block_content:c13568f8-3b74-4a8e-9170-cc93b431d8fc'
+settings:
+  id: 'block_content:c13568f8-3b74-4a8e-9170-cc93b431d8fc'
+  label: 'Call to action'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

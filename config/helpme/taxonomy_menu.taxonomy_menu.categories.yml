@@ -1,0 +1,14 @@
+uuid: 13a0e14b-1de0-4078-96ed-4511ab51e52e
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.categories
+    - taxonomy.vocabulary.property_type
+id: categories
+label: 'Property Type'
+vocabulary: property_type
+menu: categories
+expanded: false
+depth: 0
+menu_parent: 'admin:'

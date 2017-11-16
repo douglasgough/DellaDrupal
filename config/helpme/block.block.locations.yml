@@ -1,0 +1,24 @@
+uuid: fcfc9140-7b5f-4b01-97c1-c4cca8ddf33b
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.locations
+  module:
+    - system
+  theme:
+    - foundation
+id: locations
+theme: foundation
+region: footer_second
+weight: -16
+provider: null
+plugin: 'system_menu_block:locations'
+settings:
+  id: 'system_menu_block:locations'
+  label: Locations
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }
