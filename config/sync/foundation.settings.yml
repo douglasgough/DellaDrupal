@@ -2,12 +2,12 @@ features:
   node_user_picture: 1
   comment_user_picture: 1
   comment_user_verification: 1
-  favicon: 0
+  favicon: 1
 logo:
   use_default: 1
   path: themes/foundation/assets/img/logo.png
 favicon:
-  use_default: 0
+  use_default: 1
   path: ''
 facebook: 'https://facebook.com'
 twitter: 'https://twitter.com'
