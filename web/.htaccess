@@ -219,3 +219,5 @@ AddEncoding gzip svgz
   AddOutputFilterByType DEFLATE font/otf
   AddOutputFilterByType DEFLATE font/opentype
 </IfModule>
+
+Redirect 301 /market-report https://dellarealtor.com/market-insights
