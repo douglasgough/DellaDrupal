@@ -26,12 +26,13 @@ visibility:
   'entity_bundle:node':
     id: 'entity_bundle:node'
     bundles:
+      landing_page: landing_page
       listing: listing
     negate: true
     context_mapping:
       node: '@node.node_route_context:node'
   request_path:
     id: request_path
-    pages: /market-insights
+    pages: "/market-insights\r\n/about"
     negate: true
     context_mapping: {  }

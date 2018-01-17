@@ -5,7 +5,6 @@ dependencies:
   config:
     - core.entity_view_mode.node.open_house
     - field.field.node.listing.body
-    - field.field.node.listing.comment
     - field.field.node.listing.field_amenities
     - field.field.node.listing.field_bathrooms
     - field.field.node.listing.field_bedrooms
@@ -129,7 +128,6 @@ content:
     third_party_settings: {  }
 hidden:
   body: true
-  comment: true
   field_amenities: true
   field_bathrooms: true
   field_bedrooms: true

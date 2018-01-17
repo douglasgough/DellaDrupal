@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - field.field.node.listing.body
-    - field.field.node.listing.comment
     - field.field.node.listing.field_amenities
     - field.field.node.listing.field_bathrooms
     - field.field.node.listing.field_bedrooms
@@ -360,7 +359,6 @@ content:
     type: string
     region: above_right
 hidden:
-  comment: true
   field_amenities: true
   field_display_open_house: true
   field_email: true

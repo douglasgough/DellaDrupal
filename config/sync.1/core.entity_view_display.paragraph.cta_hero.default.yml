@@ -1,0 +1,90 @@
+uuid: 07ae4724-688c-4f3b-ad5a-71f1db99dd3b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_hero.field_cta_hero_button
+    - field.field.paragraph.cta_hero.field_cta_hero_image
+    - field.field.paragraph.cta_hero.field_cta_hero_message
+    - paragraphs.paragraphs_type.cta_hero
+  module:
+    - ds
+    - link
+    - responsive_bg_image_formatter
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_hero
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      hero:
+        - field_cta_hero_image
+        - field_cta_hero_message
+        - field_cta_hero_button
+id: paragraph.cta_hero.default
+targetEntityType: paragraph
+bundle: cta_hero
+mode: default
+content:
+  field_cta_hero_button:
+    weight: 2
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: '0'
+      target: '0'
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: link
+    region: hero
+  field_cta_hero_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: cta_hero_image_large
+      css_settings:
+        bg_image_selector: .hero-filter-background
+        bg_image_z_index: auto
+        bg_image_color: ''
+        bg_image_x: ''
+        bg_image_y: ''
+        bg_image_attachment: scroll
+        bg_image_repeat: no-repeat
+        bg_image_background_size: ''
+        bg_image_important: '1'
+        bg_image_background_size_ie8: 0
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: responsive_bg_image_formatter
+    region: hero
+  field_cta_hero_message:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: reset
+          settings:
+            lb: ''
+    type: text_default
+    region: hero
+hidden: {  }
