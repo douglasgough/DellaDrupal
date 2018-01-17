@@ -328,6 +328,7 @@ display:
         title: 'Open House'
         menu_name: mobile
         weight: -50
+        enabled: false
       fields:
         title:
           id: title

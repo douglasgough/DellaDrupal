@@ -1,0 +1,42 @@
+uuid: f90cdf7e-cd3d-4c4c-a691-72d3357bf155
+langcode: en
+status: true
+dependencies: {  }
+id: editor
+label: Editor
+weight: 3
+is_admin: null
+permissions:
+  - 'access content'
+  - 'access content overview'
+  - 'access files overview'
+  - 'access shortcuts'
+  - 'create article content'
+  - 'create listing content'
+  - 'create testimonial content'
+  - 'delete own article content'
+  - 'delete own listing content'
+  - 'delete own testimonial content'
+  - 'edit any article content'
+  - 'edit any listing content'
+  - 'edit any testimonial content'
+  - 'edit own article content'
+  - 'edit own comments'
+  - 'edit own listing content'
+  - 'edit own testimonial content'
+  - 'post comments'
+  - 'revert all revisions'
+  - 'revert article revisions'
+  - 'revert listing revisions'
+  - 'revert testimonial revisions'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use advanced search'
+  - 'use text format basic_html'
+  - 'use text format full_html'
+  - 'use text format restricted_html'
+  - 'view all revisions'
+  - 'view article revisions'
+  - 'view listing revisions'
+  - 'view own unpublished content'
+  - 'view testimonial revisions'

@@ -2,12 +2,12 @@ features:
   node_user_picture: 1
   comment_user_picture: 1
   comment_user_verification: 1
-  favicon: 0
+  favicon: 1
 logo:
   use_default: 1
   path: themes/foundation/assets/img/logo.png
 favicon:
-  use_default: 0
+  use_default: 1
   path: ''
 facebook: 'https://facebook.com'
 twitter: 'https://twitter.com'
@@ -23,4 +23,4 @@ search_background_upload: ''
 favicon_upload: ''
 aaa: 'public://Screen Shot 2016-09-29 at 10.51.40_14.png'
 search_background: ''
-google_maps_api_key: AIzaSyCsvf1PCi_cbI1hejDpVIjNlBrIgolKQwM
+google_maps_api_key: AIzaSyCB7Sji9UlY8nWVWZpQ909saNGXMbsKAMo

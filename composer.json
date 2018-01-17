@@ -31,6 +31,7 @@
         "drupal/core": "~8.0",
         "drupal/ctools": "^3.0",
         "drupal/devel": "^1.0@RC",
+        "drupal/disqus": "1.x-dev",
         "drupal/ds": "^3.1",
         "drupal/field_group": "^1.0@RC",
         "drupal/geolocation": "^1.10",

@@ -8,6 +8,7 @@ dependencies:
     - field.field.paragraph.card.field_card_text
     - field.field.paragraph.card.field_card_title
     - paragraphs.paragraphs_type.card
+    - responsive_image.styles.card_image
   module:
     - ds
     - link
@@ -38,9 +39,16 @@ content:
     weight: 1
     label: hidden
     settings:
+      responsive_image_style: card_image
       image_link: ''
-      responsive_image_style: ''
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     type: responsive_image
     region: top
   field_card_link:

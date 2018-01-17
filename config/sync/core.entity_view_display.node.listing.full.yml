@@ -5,10 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.full
     - field.field.node.listing.body
-    - field.field.node.listing.comment
     - field.field.node.listing.field_amenities
     - field.field.node.listing.field_bathrooms
     - field.field.node.listing.field_bedrooms
+    - field.field.node.listing.field_display_open_house
     - field.field.node.listing.field_email
     - field.field.node.listing.field_feature_sheet
     - field.field.node.listing.field_floors
@@ -21,6 +21,7 @@ dependencies:
     - field.field.node.listing.field_lot_area
     - field.field.node.listing.field_lot_dimensions
     - field.field.node.listing.field_mls_number
+    - field.field.node.listing.field_open_house_date
     - field.field.node.listing.field_opening_hours
     - field.field.node.listing.field_parking
     - field.field.node.listing.field_price
@@ -178,13 +179,14 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  comment: true
   field_amenities: true
   field_bedrooms: true
+  field_display_open_house: true
   field_email: true
   field_geolocation: true
   field_image: true
   field_location: true
+  field_open_house_date: true
   field_property: true
   field_property_status: true
   field_verified: true

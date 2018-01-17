@@ -4,10 +4,36 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_main_content
+    - field.field.node.page.field_paragraph_1
+    - field.field.node.page.field_paragraph_2
+    - field.field.node.page.field_paragraph_3
     - node.type.page
   module:
+    - ds
+    - entity_reference_revisions
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_3col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      above_left:
+        - field_paragraph_1
+      above_center:
+        - field_paragraph_2
+      above_right:
+        - field_paragraph_3
+      middle:
+        - field_main_content
+        - body
+      below_right:
+        - links
 _core:
   default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
 id: node.page.default
@@ -18,11 +44,78 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 100
+    weight: 4
     settings: {  }
     third_party_settings: {  }
-    region: content
+    region: middle
+  field_main_content:
+    type: entity_reference_revisions_entity_view
+    weight: 3
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: div
+            ow-cl: fullwidth
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+    region: middle
+  field_paragraph_1:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: above_left
+  field_paragraph_2:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: above_center
+  field_paragraph_3:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: above_right
   links:
-    weight: 101
-    region: content
+    weight: 5
+    region: below_right
+    settings: {  }
+    third_party_settings: {  }
 hidden: {  }

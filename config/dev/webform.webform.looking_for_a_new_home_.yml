@@ -1,12 +1,9 @@
-uuid: ee3fb5c6-899a-4f45-b3ae-9cbfb962fb0d
 langcode: en
 status: open
 dependencies:
   enforced:
     module:
       - webform
-_core:
-  default_config_hash: TXbSSS0lYoFb39dSF4qf9kvAtJAkqMBR-Dg8drrFJko
 open: null
 close: null
 uid: 1
@@ -20,6 +17,7 @@ css: ''
 javascript: ''
 settings:
   ajax: true
+  ajax_scroll_top: form
   page: true
   page_submit_path: ''
   page_confirm_path: ''
@@ -49,8 +47,9 @@ settings:
   wizard_progress_pages: false
   wizard_progress_percentage: false
   wizard_start_label: ''
-  wizard_complete: true
-  wizard_complete_label: ''
+  wizard_confirmation: true
+  wizard_confirmation_label: ''
+  wizard_track: ''
   preview: 0
   preview_label: ''
   preview_title: ''
@@ -63,9 +62,9 @@ settings:
   draft_auto_save: false
   draft_saved_message: ''
   draft_loaded_message: ''
-  confirmation_type: url_message
-  confirmation_title: ''
-  confirmation_message: 'Your message has been sent.'
+  confirmation_type: modal
+  confirmation_title: 'Thanks for your message'
+  confirmation_message: 'I&#39;ll get back to you very soon'
   confirmation_url: '<front>'
   confirmation_attributes: {  }
   confirmation_back: true
@@ -82,6 +81,8 @@ settings:
   results_disabled: false
   results_disabled_ignore: false
   token_update: false
+  wizard_comfirmation: true
+  wizard_comfirmation_label: ''
 access:
   create:
     roles:
@@ -118,58 +119,27 @@ access:
     users: {  }
     permissions: {  }
 handlers:
-  email_confirmation:
+  looking_for_a_new_home:
     id: email
-    label: 'Email confirmation'
-    handler_id: email_confirmation
+    label: 'Looking for a new home'
+    handler_id: looking_for_a_new_home
     status: true
     conditions: {  }
-    weight: 1
-    settings:
-      states:
-        - completed
-      to_mail: '[webform_submission:values:email:raw]'
-      to_options: {  }
-      cc_mail: ''
-      cc_options: {  }
-      bcc_mail: ''
-      bcc_options: {  }
-      from_mail: default
-      from_options: {  }
-      from_name: default
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
-      excluded_elements: {  }
-      ignore_access: false
-      exclude_empty: true
-      html: true
-      attachments: false
-      debug: false
-      reply_to: ''
-      return_path: ''
-      sender_mail: ''
-      sender_name: ''
-  email_notification:
-    id: email
-    label: 'Email notification'
-    handler_id: email_notification
-    status: true
-    conditions: {  }
-    weight: 1
+    weight: 2
     settings:
       states:
         - completed
       to_mail: default
       to_options: {  }
-      cc_mail: ''
+      cc_mail: della@dellarealtor.com
       cc_options: {  }
       bcc_mail: ''
       bcc_options: {  }
       from_mail: '[webform_submission:values:email:raw]'
       from_options: {  }
       from_name: '[webform_submission:values:name:raw]'
-      subject: '[webform_submission:values:subject:raw]'
-      body: '[webform_submission:values:message:value]'
+      subject: default
+      body: default
       excluded_elements: {  }
       ignore_access: false
       exclude_empty: true
@@ -180,3 +150,6 @@ handlers:
       return_path: ''
       sender_mail: ''
       sender_name: ''
+uuid: ee3fb5c6-899a-4f45-b3ae-9cbfb962fb0d
+_core:
+  default_config_hash: TXbSSS0lYoFb39dSF4qf9kvAtJAkqMBR-Dg8drrFJko
