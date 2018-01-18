@@ -7,6 +7,21 @@ _core:
 id: front
 label: 'Front page'
 tags:
+  image_src: 'https://dellarealtor.com/themes/contrib/foundation/assets/img/opengraph_dellahonestly.jpg'
+  description: 'Della Gough is a Realtor in Vancouver with 27 years experience in buying and selling residential properties.'
+  abstract: 'Della Gough is a Realtor in Vancouver with 27 years experience in buying and selling residential properties.'
   canonical_url: '[site:url]'
-  title: '[site:name] | [site:slogan]'
+  title: 'Real Estate Honestly by Della Gough'
   shortlink: '[site:url]'
+  google_plus_name: '[site:name]'
+  google_plus_description: 'Della Gough is a Realtor in Vancouver with 27 years experience in buying and selling residential properties.'
+  google_plus_image: 'https://dellarealtor.com/themes/contrib/foundation/assets/img/opengraph_dellahonestly.jpg'
+  og_image_height: '630'
+  og_type: Website
+  og_url: '[site:url]'
+  og_image_type: image/jpeg
+  og_image_width: '1200'
+  og_image: 'https://dellarealtor.com/themes/contrib/foundation/assets/img/opengraph_dellahonestly.jpg'
+  og_description: 'Della Gough is a Realtor in Vancouver with 27 years experience in buying and selling residential properties.'
+  og_site_name: '[site:name]'
+  og_title: '[site:name]'
