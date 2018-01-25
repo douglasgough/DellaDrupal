@@ -410,7 +410,7 @@ display:
     position: 2
     display_options:
       display_extenders: {  }
-      path: blog
+      path: news-resources
       pager:
         type: full
         options:

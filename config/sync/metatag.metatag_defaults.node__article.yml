@@ -1,0 +1,19 @@
+uuid: 636ff5b4-bf13-4bbf-b471-4f9f40cd00d9
+langcode: en
+status: true
+dependencies: {  }
+id: node__article
+label: 'Content: Article'
+tags:
+  description: '[node:summary]'
+  abstract: '[node:summary]'
+  title: '[site:name] | [node:title]'
+  schema_article_date_published: '[node:created:html_datetime]'
+  schema_article_image: 'a:4:{s:5:"@type";s:11:"ImageObject";s:3:"url";s:29:"[node:field_image:entity:url]";s:5:"width";s:24:"[node:field_image:width]";s:6:"height";s:25:"[node:field_image:height]";}'
+  schema_article_main_entity_of_page: '[current-page:url]'
+  schema_article_headline: '[node:title]'
+  schema_article_date_modified: '[node:changed:html_datetime]'
+  schema_article_description: '[node:summary]'
+  schema_article_author: 'a:7:{s:5:"@type";s:6:"Person";s:3:"@id";s:0:"";s:4:"name";s:26:"[node:author:display-name]";s:3:"url";s:17:"[node:author:url]";s:6:"sameAs";s:0:"";s:4:"logo";a:0:{}s:5:"pivot";s:0:"";}'
+  schema_article_type: Article
+  schema_article_about: '[node:field_category]'

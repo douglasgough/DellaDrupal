@@ -1,89 +1,110 @@
 progress:
-  '#changed': 1516314763
+  '#changed': 1516920600
   '#changed_by': '1'
-  '#completed_items': 28
+  '#completed_items': 35
   '#items':
     install_and_enable_seo_checklist_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_and_enable_coffee_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     configure_coffee_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_and_enable_admin_toolbar_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_composer_command_line_tool:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_console_command_line_tool:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_drush_command_line_tool:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     show_cli_commands:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     enable_clean_urls:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_and_enable_redirect_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     configure_the_redirect_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_and_enable_pathauto_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     configure_pathauto_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     create_pathauto_patterns:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_and_enable_metatag_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     set_metatags_for_your_site:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_and_enable_alternate_hreflang_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_and_enable_xml_sitemap_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     configure_xml_sitemap_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     set_up_cron:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     get_a_google_account:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     verify_with_google_search_console:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     submit_xml_sitemap_to_google:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     add_xml_sitemap_to_your_robotstxt_file:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     install_and_enable_google_analytics_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     configure_google_analytics_module:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     sign_in_to_google_analytics_and_create_an_analytics_property_for_your_website:
-      '#completed': 1516314763
+      '#completed': 1516920600
       '#uid': '1'
     verify_your_site_is_sending_data_to_google_analytics:
-      '#completed': 1516314763
+      '#completed': 1516920600
+      '#uid': '1'
+    install_and_enable_easy_breadcrumbs_module:
+      '#completed': 1516920600
+      '#uid': '1'
+    configure_easy_breadcrumbs_module:
+      '#completed': 1516920600
+      '#uid': '1'
+    install_and_enable_rdf_ui_module:
+      '#completed': 1516920600
+      '#uid': '1'
+    set_schemaorg_schemas_for_your_content:
+      '#completed': 1516920600
+      '#uid': '1'
+    install_and_enable_linkit_module:
+      '#completed': 1516920600
+      '#uid': '1'
+    configure_linkit_module:
+      '#completed': 1516920600
+      '#uid': '1'
+    configure_text_formats_to_use_linkit_module:
+      '#completed': 1516920600
       '#uid': '1'
