@@ -7,5 +7,11 @@ _core:
 id: taxonomy_term
 label: 'Taxonomy term'
 tags:
-  title: '[term:name] | [site:name]'
   description: '[term:description]'
+  abstract: '[term:description]'
+  keywords: '[term:name]'
+  title: '[term:name] | [site:name]'
+  google_plus_name: '[term:name] | [site:name]'
+  google_plus_description: '[term:description]'
+  og_description: '[term:description]'
+  og_title: '[term:name] | [site:name]'

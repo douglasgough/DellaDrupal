@@ -12,7 +12,9 @@ module:
   block: 0
   block_content: 0
   breakpoint: 0
+  checklistapi: 0
   ckeditor: 0
+  coffee: 0
   color: 0
   config: 0
   contact: 0
@@ -26,6 +28,7 @@ module:
   disqus: 0
   ds: 0
   dynamic_page_cache: 0
+  easy_breadcrumb: 0
   editor: 0
   entity_reference_revisions: 0
   field: 0
@@ -37,26 +40,41 @@ module:
   google_analytics: 0
   help: 0
   history: 0
+  hreflang: 0
   image: 0
   imce: 0
   layout_discovery: 0
   libraries: 0
   link: 0
   link_attributes: 0
+  linkit: 0
   menu_ui: 0
   metatag: 0
   metatag_facebook: 0
+  metatag_google_plus: 0
   metatag_open_graph: 0
+  metatag_twitter_cards: 0
+  metatag_verification: 0
+  metatag_views: 0
   node: 0
   options: 0
   page_cache: 0
   path: 0
   quickedit: 0
   rdf: 0
+  redirect: 0
   responsive_bg_image_formatter: 0
   responsive_image: 0
+  schema_article: 0
+  schema_event: 0
+  schema_item_list: 0
+  schema_metatag: 0
+  schema_organization: 0
+  schema_web_page: 0
+  schema_web_site: 0
   search: 0
   seckit: 0
+  seo_checklist: 0
   serialization: 0
   shortcut: 0
   simple_sitemap: 0

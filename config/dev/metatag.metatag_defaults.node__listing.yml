@@ -1,0 +1,7 @@
+uuid: 95cb606f-d018-4010-9fde-b3c681a95095
+langcode: en
+status: true
+dependencies: {  }
+id: node__listing
+label: 'Content: Listing'
+tags: {  }

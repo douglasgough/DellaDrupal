@@ -1,0 +1,51 @@
+uuid: 4f9bfde1-7df1-403e-80db-cf22f8cfcb6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.linkit_result_thumbnail
+  module:
+    - file
+    - image
+    - imce
+    - node
+third_party_settings:
+  imce:
+    use: true
+    scheme: public
+id: default
+label: Default
+description: ''
+attributes:
+  title:
+    id: title
+    weight: 0
+    settings:
+      automatic_title: true
+matchers:
+  752b35f2-381c-4ac6-bcea-a5cd2435baaa:
+    uuid: 752b35f2-381c-4ac6-bcea-a5cd2435baaa
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: '[site:name] | [node:title]'
+      bundles:
+        article: article
+        landing_page: landing_page
+        listing: listing
+        page: page
+        testimonial: testimonial
+      group_by_bundle: true
+      include_unpublished: false
+  133d98e7-ece4-4818-8c9a-f5ad5d29ed00:
+    uuid: 133d98e7-ece4-4818-8c9a-f5ad5d29ed00
+    id: 'entity:file'
+    weight: 0
+    settings:
+      result_description: '[file:name]'
+      bundles: null
+      group_by_bundle: null
+      images:
+        show_dimensions: true
+        show_thumbnail: true
+        thumbnail_image_style: linkit_result_thumbnail

@@ -1,22 +1,23 @@
-uuid: 102b287e-6aeb-4050-9bc5-3baa1f0b7ad6
+uuid: 73e23301-0b0d-4799-9f7b-2a37d2969150
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: _article_node_title_
-label: Article
+id: pages
+label: Pages
 type: 'canonical_entities:node'
-pattern: '/news-resources/[node:title]'
+pattern: '[current-page:title]'
 selection_criteria:
-  b6b25e74-ccc5-4067-a960-a65352757adb:
+  f56c5ae2-df84-4954-9663-5e4936010efe:
     id: node_type
     bundles:
-      article: article
+      landing_page: landing_page
+      page: page
     negate: false
     context_mapping:
       node: node
-    uuid: b6b25e74-ccc5-4067-a960-a65352757adb
+    uuid: f56c5ae2-df84-4954-9663-5e4936010efe
 selection_logic: and
 weight: -5
 relationships: {  }

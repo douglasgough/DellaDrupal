@@ -7,4 +7,20 @@ _core:
 id: global
 label: Global
 tags:
-  title: '[current-page:title]'
+  canonical_url: '[current-page:url:absolute]'
+  title: '[current-page:title] | [site:name]'
+  shortlink: '[current-page:url:unaliased]'
+  rights: '“Copyright ©[date:html_year] Della Gough. All rights reserved.'
+  fb_admins: 'dellahonestly,dougwgough'
+  og_email: della@dellarealtor.com
+  og_locality: Vancouver
+  og_postal_code: 'V6M 3W6'
+  og_region: BC
+  og_country_name: Canada
+  og_url: '[current-page:url:absolute]'
+  og_locale: en-CA
+  og_site_name: '[site:name]'
+  og_longitude: '-123.155863'
+  og_phone_number: 604-889-3811
+  og_latitude: '49.236208'
+  og_street_address: '#200 - 5511 West Boulevard'

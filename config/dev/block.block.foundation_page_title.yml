@@ -11,7 +11,7 @@ _core:
 id: foundation_page_title
 theme: foundation
 region: content_top
-weight: -13
+weight: -16
 provider: null
 plugin: page_title_block
 settings:

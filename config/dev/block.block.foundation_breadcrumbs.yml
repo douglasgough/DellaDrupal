@@ -10,8 +10,8 @@ _core:
   default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
 id: foundation_breadcrumbs
 theme: foundation
-region: breadcrumb
-weight: 0
+region: content_top
+weight: -15
 provider: null
 plugin: system_breadcrumb_block
 settings:
@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
-    negate: true
+    pages: "/news-resources\r\n/news-resources/*"
+    negate: false
     context_mapping: {  }

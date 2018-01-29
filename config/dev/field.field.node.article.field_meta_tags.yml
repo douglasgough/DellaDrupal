@@ -1,0 +1,23 @@
+uuid: 1bf21e36-fb3b-4aa4-b152-95ad86af0605
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.article
+  module:
+    - metatag
+id: node.article.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: article
+label: 'Meta tags'
+description: 'Add meta tags and Schema.org tags that describe the specific content of this article. Default tags will be inherited from the Meta tag configuration.'
+required: false
+translatable: false
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag
