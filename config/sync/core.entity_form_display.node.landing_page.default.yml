@@ -11,11 +11,15 @@ dependencies:
     - field.field.node.landing_page.field_lp_card_two
     - field.field.node.landing_page.field_lp_content_bottom
     - field.field.node.landing_page.field_lp_fw_segment
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_yoast_seo
     - node.type.landing_page
   module:
+    - metatag
     - paragraphs
     - path
     - text
+    - yoast_seo
 id: node.landing_page.default
 targetEntityType: node
 bundle: landing_page
@@ -112,6 +116,19 @@ content:
       default_paragraph_type: ''
     third_party_settings: {  }
     region: content
+  field_meta_tags:
+    weight: 51
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
+  field_yoast_seo:
+    weight: 52
+    settings:
+      body: body
+    third_party_settings: {  }
+    type: yoast_seo_widget
+    region: content
   path:
     type: path
     weight: 5
@@ -156,4 +173,7 @@ content:
       placeholder: ''
     region: content
     third_party_settings: {  }
+  url_redirects:
+    weight: 50
+    region: content
 hidden: {  }

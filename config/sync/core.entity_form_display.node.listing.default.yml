@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.listing.field_location
     - field.field.node.listing.field_lot_area
     - field.field.node.listing.field_lot_dimensions
+    - field.field.node.listing.field_meta_tags
     - field.field.node.listing.field_mls_number
     - field.field.node.listing.field_open_house_date
     - field.field.node.listing.field_opening_hours
@@ -30,6 +31,7 @@ dependencies:
     - field.field.node.listing.field_verified
     - field.field.node.listing.field_website
     - field.field.node.listing.field_year_built
+    - field.field.node.listing.field_yoast_seo
     - image.style.thumbnail
     - node.type.listing
   module:
@@ -40,8 +42,10 @@ dependencies:
     - geolocation
     - image
     - link
+    - metatag
     - path
     - text
+    - yoast_seo
 third_party_settings:
   field_group:
     group_presentation:
@@ -259,6 +263,12 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_meta_tags:
+    weight: 122
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_firehose
+    region: content
   field_mls_number:
     weight: 51
     settings:
@@ -341,6 +351,13 @@ content:
     third_party_settings: {  }
     type: string_textfield
     region: content
+  field_yoast_seo:
+    weight: 123
+    settings:
+      body: body
+    third_party_settings: {  }
+    type: yoast_seo_widget
+    region: content
   path:
     type: path
     weight: 5
@@ -384,5 +401,8 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
+  url_redirects:
+    weight: 50
     region: content
 hidden: {  }

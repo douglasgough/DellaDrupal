@@ -19,6 +19,7 @@ dependencies:
     - field.field.node.listing.field_location
     - field.field.node.listing.field_lot_area
     - field.field.node.listing.field_lot_dimensions
+    - field.field.node.listing.field_meta_tags
     - field.field.node.listing.field_mls_number
     - field.field.node.listing.field_open_house_date
     - field.field.node.listing.field_opening_hours
@@ -30,12 +31,14 @@ dependencies:
     - field.field.node.listing.field_verified
     - field.field.node.listing.field_website
     - field.field.node.listing.field_year_built
+    - field.field.node.listing.field_yoast_seo
     - node.type.listing
   module:
     - address
     - daterange_compact
     - ds
     - file
+    - metatag
     - slick
     - text
     - user
@@ -254,6 +257,13 @@ content:
     third_party_settings: {  }
     type: string
     region: above_left
+  field_meta_tags:
+    weight: 19
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_mls_number:
     weight: 16
     label: inline
@@ -358,6 +368,14 @@ content:
     third_party_settings: {  }
     type: string
     region: above_right
+  field_yoast_seo:
+    weight: 20
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden:
   field_amenities: true
   field_display_open_house: true

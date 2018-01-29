@@ -5,13 +5,16 @@ dependencies:
   config:
     - field.field.node.page.body
     - field.field.node.page.field_main_content
+    - field.field.node.page.field_meta_tags
     - field.field.node.page.field_paragraph_1
     - field.field.node.page.field_paragraph_2
     - field.field.node.page.field_paragraph_3
+    - field.field.node.page.field_yoast_seo
     - node.type.page
   module:
     - ds
     - entity_reference_revisions
+    - metatag
     - text
     - user
 third_party_settings:
@@ -86,6 +89,13 @@ content:
             fi: false
             fi-def-at: false
     region: middle
+  field_meta_tags:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_paragraph_1:
     type: entity_reference_revisions_entity_view
     weight: 0
@@ -113,6 +123,14 @@ content:
       link: ''
     third_party_settings: {  }
     region: above_right
+  field_yoast_seo:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   links:
     weight: 5
     region: below_right

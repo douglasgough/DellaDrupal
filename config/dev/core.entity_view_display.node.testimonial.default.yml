@@ -6,10 +6,13 @@ dependencies:
     - field.field.node.testimonial.body
     - field.field.node.testimonial.field_client_location
     - field.field.node.testimonial.field_client_name
+    - field.field.node.testimonial.field_meta_tags
     - field.field.node.testimonial.field_short_quote
+    - field.field.node.testimonial.field_yoast_seo
     - node.type.testimonial
   module:
     - ds
+    - metatag
     - text
     - user
 third_party_settings:
@@ -56,6 +59,13 @@ content:
     third_party_settings: {  }
     type: string
     region: left
+  field_meta_tags:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
   field_short_quote:
     weight: 4
     label: hidden
@@ -63,5 +73,13 @@ content:
     third_party_settings: {  }
     type: basic_string
     region: top
+  field_yoast_seo:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden:
   links: true

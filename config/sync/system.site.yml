@@ -4,7 +4,7 @@ mail: doug@dellarealtor.com
 slogan: 'Vancouver Realtor Listings'
 page:
   403: ''
-  404: ''
+  404: /search404
   front: /node
 admin_compact_mode: false
 weight_select_max: 100

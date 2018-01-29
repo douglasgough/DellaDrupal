@@ -11,10 +11,13 @@ dependencies:
     - field.field.node.landing_page.field_lp_card_two
     - field.field.node.landing_page.field_lp_content_bottom
     - field.field.node.landing_page.field_lp_fw_segment
+    - field.field.node.landing_page.field_meta_tags
+    - field.field.node.landing_page.field_yoast_seo
     - node.type.landing_page
   module:
     - ds
     - entity_reference_revisions
+    - metatag
     - text
     - user
 third_party_settings:
@@ -143,5 +146,20 @@ content:
             fis-def-at: false
             fi-def-at: false
     region: middle
+  field_meta_tags:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: metatag_empty_formatter
+    region: content
+  field_yoast_seo:
+    weight: 9
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
 hidden:
   links: true
