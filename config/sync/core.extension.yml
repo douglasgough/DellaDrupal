@@ -21,10 +21,10 @@ module:
   contact_block: 0
   contextual: 0
   ctools: 0
-  daterange_compact: 0
   datetime: 0
   datetime_range: 0
   dblog: 0
+  devel: 0
   disqus: 0
   ds: 0
   dynamic_page_cache: 0
@@ -43,6 +43,7 @@ module:
   help: 0
   history: 0
   hreflang: 0
+  iframe: 0
   image: 0
   imce: 0
   layout_discovery: 0

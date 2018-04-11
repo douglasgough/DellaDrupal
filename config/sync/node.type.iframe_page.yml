@@ -1,0 +1,18 @@
+uuid: 69c8b73e-e4ea-4758-9b13-f2ee51f0bba8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'IFrame Page'
+type: iframe_page
+description: 'A page for embedding iFrames'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

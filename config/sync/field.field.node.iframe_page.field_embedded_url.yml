@@ -1,0 +1,29 @@
+uuid: dea20bc1-2ca3-4dd4-862b-6a7b362b2d08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_embedded_url
+    - node.type.iframe_page
+  module:
+    - iframe
+id: node.iframe_page.field_embedded_url
+field_name: field_embedded_url
+entity_type: node
+bundle: iframe_page
+label: 'Embedded URL'
+description: 'Add all iFrame information to this field.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  class: ''
+  frameborder: '0'
+  scrolling: 'no'
+  transparency: '0'
+  tokensupport: '0'
+  title: ''
+  height: ''
+  width: ''
+field_type: iframe

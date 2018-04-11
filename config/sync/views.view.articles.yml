@@ -319,6 +319,8 @@ display:
           text: 'Read More'
           entity_type: node
           plugin_id: entity_link
+          output_url_as_text: false
+          absolute: false
       filters:
         status:
           value: '1'
@@ -679,6 +681,8 @@ display:
           text: 'Read More'
           entity_type: node
           plugin_id: entity_link
+          output_url_as_text: false
+          absolute: false
     cache_metadata:
       max-age: -1
       contexts:

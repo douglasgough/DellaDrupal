@@ -905,6 +905,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1412,6 +1413,8 @@ display:
           text: 'View Listing'
           entity_type: node
           plugin_id: entity_link
+          output_url_as_text: false
+          absolute: false
         field_verified:
           id: field_verified
           table: node__field_verified
@@ -1663,6 +1666,7 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
           is_grouped: false
           group_info:
             label: ''
@@ -1796,6 +1800,9 @@ display:
               authenticated: authenticated
               anonymous: '0'
               administrator: '0'
+            placeholder: ''
+            min_placeholder: ''
+            max_placeholder: ''
           is_grouped: false
           group_info:
             label: 'Price (field_price)'
@@ -2168,6 +2175,8 @@ display:
           text: 'View Listing'
           entity_type: node
           plugin_id: entity_link
+          output_url_as_text: false
+          absolute: false
         field_verified:
           id: field_verified
           table: node__field_verified

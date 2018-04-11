@@ -1,7 +1,9 @@
 uuid: b1f2fc8c-661d-42b6-8bba-a9d5bd2673ab
 langcode: en
-status: true
+status: false
 dependencies:
+  config:
+    - webform.webform.request_information
   module:
     - ctools
     - webform
@@ -9,7 +11,7 @@ dependencies:
     - foundation
 id: webform
 theme: foundation
-region: sidebar_first
+region: header
 weight: -18
 provider: null
 plugin: webform_block
