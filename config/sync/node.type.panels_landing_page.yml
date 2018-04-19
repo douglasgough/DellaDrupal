@@ -1,0 +1,17 @@
+uuid: 107d7a9f-c4a9-4b56-abaf-41548d91a7dc
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Panels Landing Page'
+type: panels_landing_page
+description: 'Landing page build with Panels and IPE, for mini-sites and standalone landing pages. '
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

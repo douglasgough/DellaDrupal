@@ -1,0 +1,29 @@
+uuid: 5695a7d8-65f2-4099-8db0-eb7b9cc74abe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_form
+    - paragraphs.paragraphs_type.cta_hero_with_form
+  module:
+    - webform
+id: paragraph.cta_hero_with_form.field_cta_form
+field_name: field_cta_form
+entity_type: paragraph
+bundle: cta_hero_with_form
+label: 'CTA Form'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

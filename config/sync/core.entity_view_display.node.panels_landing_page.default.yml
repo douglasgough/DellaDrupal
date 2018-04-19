@@ -1,0 +1,136 @@
+uuid: 0eccecf7-e8d5-48ae-b8da-e78327dbd9dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.panels_landing_page.body
+    - field.field.node.panels_landing_page.panelizer
+    - node.type.panels_landing_page
+  module:
+    - panelizer
+    - text
+    - user
+third_party_settings:
+  panelizer:
+    enable: true
+    custom: false
+    allow: false
+    default: panelized
+    displays:
+      default:
+        blocks:
+          c31a85c7-9b30-4236-acdd-f316f36bca6d:
+            id: 'entity_field:node:uid'
+            label: 'Authored by'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: author
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 0
+            uuid: c31a85c7-9b30-4236-acdd-f316f36bca6d
+          a791bd60-6182-4094-a52b-457384be6ff4:
+            id: 'entity_field:node:created'
+            label: 'Authored on'
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: timestamp
+              settings:
+                date_format: medium
+                custom_date_format: ''
+                timezone: ''
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 0
+            uuid: a791bd60-6182-4094-a52b-457384be6ff4
+          37f4b78a-d755-4d2a-b130-dcad68261049:
+            id: 'entity_field:node:body'
+            label: Body
+            provider: ctools_block
+            label_display: '0'
+            formatter:
+              label: hidden
+              type: text_default
+              settings: {  }
+              third_party_settings: {  }
+              weight: 0
+              region: content
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+            region: content
+            weight: 101
+            uuid: 37f4b78a-d755-4d2a-b130-dcad68261049
+        id: panels_variant
+        label: Default
+        uuid: 1f5172d6-a8d7-44e9-95fc-f863170f116e
+        weight: 0
+        layout: layout_onecol
+        layout_settings: {  }
+        page_title: '[node:title]'
+        storage_type: ''
+        storage_id: ''
+        builder: ipe
+        pattern: panelizer
+      panelized:
+        blocks:
+          393ce9d0-1545-41a4-8074-fc05606bd319:
+            id: 'entity_field:node:field_landing_page_hero'
+            label: Hero
+            provider: ctools_block
+            label_display: visible
+            formatter:
+              label: hidden
+              type: entity_reference_revisions_entity_view
+              settings:
+                view_mode: default
+              third_party_settings: {  }
+              weight: 0
+            region: hero
+            weight: 0
+            uuid: 393ce9d0-1545-41a4-8074-fc05606bd319
+            context_mapping:
+              entity: '@panelizer.entity_context:entity'
+        id: panels_variant
+        uuid: e41b9656-4066-4a9f-88ba-585ca8b83527
+        label: Panelized
+        weight: 0
+        layout: foundation_3col
+        layout_settings: {  }
+        page_title: null
+        storage_type: panelizer_default
+        storage_id: 'node:panels_landing_page:default:panelized'
+        pattern: panelizer
+        builder: ipe
+        static_context: {  }
+id: node.panels_landing_page.default
+targetEntityType: node
+bundle: panels_landing_page
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  panelizer: true

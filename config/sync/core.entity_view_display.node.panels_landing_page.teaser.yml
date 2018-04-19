@@ -1,0 +1,28 @@
+uuid: 18679e65-026a-4a03-a708-ce1ce81d3243
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.panels_landing_page.body
+    - node.type.panels_landing_page
+  module:
+    - text
+    - user
+id: node.panels_landing_page.teaser
+targetEntityType: node
+bundle: panels_landing_page
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

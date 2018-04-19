@@ -1,0 +1,9 @@
+uuid: 34808a6b-7467-4cc7-a7dd-df71fdfe2984
+langcode: en
+status: true
+dependencies: {  }
+id: cta_hero_with_form
+label: 'CTA hero with form'
+icon_uuid: null
+description: 'A hero image with form and button'
+behavior_plugins: {  }

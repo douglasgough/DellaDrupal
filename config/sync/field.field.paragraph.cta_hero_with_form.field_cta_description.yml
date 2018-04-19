@@ -1,0 +1,21 @@
+uuid: b7aa1563-92fa-4c7c-8e96-3e3815bcbe9e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_description
+    - paragraphs.paragraphs_type.cta_hero_with_form
+  module:
+    - text
+id: paragraph.cta_hero_with_form.field_cta_description
+field_name: field_cta_description
+entity_type: paragraph
+bundle: cta_hero_with_form
+label: 'CTA description'
+description: 'This is the explanatory text below the main CTA message.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

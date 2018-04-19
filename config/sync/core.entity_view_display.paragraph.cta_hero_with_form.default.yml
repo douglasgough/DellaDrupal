@@ -1,0 +1,84 @@
+uuid: 75619404-a38c-42dc-ac1d-38ddf7baf414
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.cta_hero_with_form.field_cta_description
+    - field.field.paragraph.cta_hero_with_form.field_cta_form
+    - field.field.paragraph.cta_hero_with_form.field_cta_hero_image
+    - field.field.paragraph.cta_hero_with_form.field_cta_hero_message
+    - paragraphs.paragraphs_type.cta_hero_with_form
+  module:
+    - ds
+    - responsive_bg_image_formatter
+    - text
+    - webform
+third_party_settings:
+  ds:
+    layout:
+      id: foundation_hero_2col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      hero_left:
+        - field_cta_hero_message
+        - field_cta_description
+      hero_right:
+        - field_cta_form
+        - field_cta_hero_image
+id: paragraph.cta_hero_with_form.default
+targetEntityType: paragraph
+bundle: cta_hero_with_form
+mode: default
+content:
+  field_cta_description:
+    type: text_default
+    weight: 1
+    region: hero_left
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_cta_form:
+    weight: 2
+    label: hidden
+    settings:
+      source_entity: true
+    third_party_settings: {  }
+    type: webform_entity_reference_entity_view
+    region: hero_right
+  field_cta_hero_image:
+    type: responsive_bg_image_formatter
+    weight: 3
+    region: hero_right
+    label: hidden
+    settings:
+      image_style: cta_hero_image_large
+      css_settings:
+        bg_image_selector: .hero-filter-background
+        bg_image_z_index: auto
+        bg_image_color: '#FFFFFF'
+        bg_image_x: left
+        bg_image_y: top
+        bg_image_attachment: scroll
+        bg_image_repeat: no-repeat
+        bg_image_background_size: cover
+        bg_image_important: '1'
+        bg_image_background_size_ie8: 0
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_cta_hero_message:
+    type: text_default
+    weight: 0
+    region: hero_left
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

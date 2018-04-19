@@ -6,6 +6,7 @@ dependencies:
     - field.storage.node.field_landing_page_hero
     - node.type.landing_page
     - paragraphs.paragraphs_type.cta_hero
+    - paragraphs.paragraphs_type.cta_hero_with_form
   module:
     - entity_reference_revisions
 id: node.landing_page.field_landing_page_hero
@@ -24,6 +25,7 @@ settings:
     negate: 0
     target_bundles:
       cta_hero: cta_hero
+      cta_hero_with_form: cta_hero_with_form
     target_bundles_drag_drop:
       cta_hero:
         enabled: true
@@ -34,4 +36,7 @@ settings:
       full_width_segment:
         weight: 6
         enabled: false
+      cta_hero_with_form:
+        enabled: true
+        weight: 7
 field_type: entity_reference_revisions

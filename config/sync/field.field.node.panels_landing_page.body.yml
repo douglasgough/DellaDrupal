@@ -1,0 +1,22 @@
+uuid: 05c3bee5-f234-4d39-80aa-b1cc0404db8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.panels_landing_page
+  module:
+    - text
+id: node.panels_landing_page.body
+field_name: body
+entity_type: node
+bundle: panels_landing_page
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

@@ -1,0 +1,21 @@
+uuid: 971c997d-9bf8-4904-bbe3-21a6ec512bc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cta_hero_message
+    - paragraphs.paragraphs_type.cta_hero_with_form
+  module:
+    - text
+id: paragraph.cta_hero_with_form.field_cta_hero_message
+field_name: field_cta_hero_message
+entity_type: paragraph
+bundle: cta_hero_with_form
+label: 'CTA hero message'
+description: 'This is the main CTA message'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
