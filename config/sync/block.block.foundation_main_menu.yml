@@ -23,4 +23,9 @@ settings:
   label_display: '0'
   level: 1
   depth: 3
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "/node/61\r\n/7-tips"
+    negate: true
+    context_mapping: {  }
