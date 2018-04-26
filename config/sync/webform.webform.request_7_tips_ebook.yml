@@ -15,7 +15,7 @@ id: request_7_tips_ebook
 title: 'Request 7 Tips Ebook'
 description: 'Visitor requests to download 7 tips ebook'
 category: ''
-elements: "cta_name:\n  '#type': textfield\n  '#title': 'CTA name'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Your name'\n  '#autocomplete': 'off'\n  '#multiple__label': ''\n  '#multiple__labels': ''\ncta_email:\n  '#type': email\n  '#title': 'CTA email'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Your email'\n  '#autocomplete': 'off'\n  '#required': true\n  '#required_error': 'Please enter your email address'\n  '#multiple__label': ''\n  '#multiple__labels': ''\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Get the Free Guide'\n  '#submit__attributes':\n    class:\n      - cta-form-button\n"
+elements: "cta_name:\n  '#type': textfield\n  '#title': 'CTA name'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Your name'\n  '#autocomplete': 'off'\ncta_email:\n  '#type': email\n  '#title': 'CTA email'\n  '#title_display': invisible\n  '#description_display': invisible\n  '#placeholder': 'Your email'\n  '#autocomplete': 'off'\n  '#required': true\n  '#required_error': 'Please enter your email address'\nactions:\n  '#type': webform_actions\n  '#title': 'Submit button(s)'\n  '#submit__label': 'Download Your Free Guide!'\n  '#submit__attributes':\n    class:\n      - cta-form-button\n"
 css: ''
 javascript: ''
 settings:

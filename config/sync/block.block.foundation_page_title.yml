@@ -22,6 +22,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: "/testimonials\r\n/market-insights"
+    pages: "/testimonials\r\n/market-insights\r\n/node/61"
     negate: true
     context_mapping: {  }
