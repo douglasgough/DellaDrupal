@@ -35,13 +35,15 @@ dependencies:
     - node.type.listing
   module:
     - address
-    - daterange_compact
+    - datetime_range
     - ds
     - file
     - metatag
+    - panelizer
     - slick
     - text
     - user
+    - yoast_seo
 third_party_settings:
   ds:
     layout:
@@ -54,6 +56,8 @@ third_party_settings:
       hero:
         - field_gallery
         - field_property_status
+        - field_meta_tags
+        - field_yoast_seo
       top:
         - field_price
         - field_open_house_date
@@ -75,6 +79,11 @@ third_party_settings:
         - field_feature_sheet
       middle:
         - body
+  panelizer:
+    enable: false
+    custom: false
+    allow: false
+    default: default
 id: node.listing.default
 targetEntityType: node
 bundle: listing
@@ -108,7 +117,8 @@ content:
   field_feature_sheet:
     weight: 17
     label: inline
-    settings: {  }
+    settings:
+      use_description_as_link_text: true
     third_party_settings: {  }
     type: file_default
     region: above_right
@@ -263,7 +273,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: metatag_empty_formatter
-    region: content
+    region: hero
   field_mls_number:
     weight: 16
     label: inline
@@ -276,7 +286,9 @@ content:
     weight: 3
     label: above
     settings:
-      format_type: medium
+      timezone_override: ''
+      date_format: 'D M d / g:i A'
+      separator: '-'
     third_party_settings:
       ds:
         ds_limit: ''
@@ -307,7 +319,7 @@ content:
             fis: false
             fis-def-at: false
             fi-def-at: false
-    type: daterange_compact
+    type: daterange_custom
     region: top
   field_parking:
     weight: 8
@@ -348,7 +360,7 @@ content:
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: address_plain
+    type: address_default
     region: above_left
   field_property_status:
     type: entity_reference_label
@@ -371,11 +383,10 @@ content:
   field_yoast_seo:
     weight: 20
     label: above
-    settings:
-      link_to_entity: false
+    settings: {  }
     third_party_settings: {  }
-    type: string
-    region: content
+    type: yoastseo_formatter
+    region: hero
 hidden:
   field_amenities: true
   field_display_open_house: true
